@@ -30,10 +30,10 @@
 	--hover-colour: black;
 }
 body {
-    font-family: 'Calibri';
-    font-size: 15px;
-    background-color: #FFFFFF;
-    line-height: 1.5;
+	font-family: 'Calibri';
+	font-size: 15px;
+	background-color: #FFFFFF;
+	line-height: 1.5;
 }
 table {
 	border-collapse: collapse;
@@ -198,8 +198,15 @@ ul {
 	box-shadow: 0 0 1px 2px var(--hover-colour);
 }
 .eventname_hover{
-    box-shadow: 0 0 3px 1px var(--hover-colour);
+	box-shadow: 0 0 3px 1px var(--hover-colour);
 }
+
+#switch {
+	position: relative;
+	display: inline-block;
+	margin-left: 40px;
+}
+
 </style>
 </head>
 <body>
@@ -213,6 +220,10 @@ ul {
 		</table>
 	</div>
 	<div>
+		<label id="switch">
+			<input id="switchcheck" type="checkbox" onclick="eventToggle()">
+		</label>
+		Hide old events
 		<ul id="eventslist">
 		</ul>
 	</div>
@@ -409,6 +420,25 @@ ul {
 		
 		$(e.target).removeClass('eventname_hover');
 	});
+	
+	function eventToggle(){
+		var circles = document.getElementsByClassName("circle_old");
+		var checkBox = document.getElementById("switchcheck");
+		
+		console.log("Selected circles " + circles.length);
+		
+		var opacity;
+		if (checkBox.checked == true){
+			opacity = 0.05;
+		} else {
+			opacity = 0.4;
+		}
+		
+		for (var i = 0; i < circles.length; i++){
+			console.log("style circles " + circles[i].style.opacity);
+			circles[i].style.opacity = opacity;
+		}		
+	};
 </script>
 </body>
 </html>
