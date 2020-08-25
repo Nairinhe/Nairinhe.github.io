@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The Elder Scrolls Online events history calendar</title>
+<style>
+:root {
+	--root-colour: OLDLACE;
+		
+	--story-dlc-colour: #b57092;
+	--chapterlaunch-colour: #0ecca7;
+	--q1-dlc-colour: #a8866c;
+	--q3-dlc-colour: #808080;
+	
+	--q2-prologue-colour: #0285a3;	
+	--q4-prologue-colour: #e36685;
+	
+	--new-crown-crates-colour: #eec41b;
+	--returning-crown-crates-colour: #ff731c;	
+	--crown-sale-colour: #ff45a3;
+	
+	--q1-motif-colour: #589929;
+	--q3-motif-colour: #327040;
+	
+	--chapter-motif-colour: #4fcaff;	
+	--q4-motif-colour: #7e63b8;	
+	
+	--hover-colour: black;
+}
+body {
+	font-family: 'Calibri';
+	font-size: 15px;
+	background-color: #FFFFFF;
+	line-height: 1.5;
+}
+table {
+	border-collapse: collapse;
+	width: 100%;
+	height: 650px;
+}
+table, tr, td {
+	border: 2px solid var(--root-colour);
+}
+td {
+	width: 3%;
+	height: 8%;
+}
+ul {
+	margin-right: 60px;
+	color: white;
+	min-width: 180px;
+}
+
+.flexcontainer {
+	display: flex;
+	align-items: center;
+	height: 690px;
+}
+@media (max-width: 390px) {
+	.flexcontainer {
+		display: block;
+	}
+}
+
+.datesrow {
+	background-color: var(--root-colour);
+}
+.datestd {
+	height: 4% ! important;
+}
+.doesnotexist{
+	background-color: var(--root-colour);
+}
+
+.cStoryDlc{
+	background-color: var(--story-dlc-colour);
+}
+.cChapterLaunch{
+	background-color: var(--chapterlaunch-colour);
+}
+.cDungeonDlcQ1{
+	background-color: var(--q1-dlc-colour);
+}
+.cDungeonDlcQ3{
+	background-color: var(--q3-dlc-colour);
+}
+.cPrologueQ2{
+	background-color: var(--q2-prologue-colour);
+}
+.cPrologueQ4{
+	background-color: var(--q4-prologue-colour);
+}
+.cNewCrownCrates{
+	background-color: var(--new-crown-crates-colour);
+}
+.cReturningCrownCrates{
+	background-color: var(--returning-crown-crates-colour);
+}
+.cCrownSale{
+	background-color: var(--crown-sale-colour);
+}
+.cMotifQ1{
+	background-color: var(--q1-motif-colour);
+}
+.cMotifQ3{
+	background-color: var(--q3-motif-colour);
+}
+.cMotifChapter{
+	background-color: var(--chapter-motif-colour);
+}
+.cMotifQ4{
+	background-color: var(--q4-motif-colour);
+}
+
+.StoryDlc{
+	background-color: var(--story-dlc-colour);
+}
+.ChapterLaunch{
+	background-color: var(--chapterlaunch-colour);
+}
+.DungeonDlcQ1{
+	background-color: var(--q1-dlc-colour);
+}
+.DungeonDlcQ3{
+	background-color: var(--q3-dlc-colour);
+}
+.PrologueQ2{
+	background-color: var(--q2-prologue-colour);
+}
+.PrologueQ4{
+	background-color: var(--q4-prologue-colour);
+}
+.NewCrownCrates{
+	background-color: var(--new-crown-crates-colour);
+}
+.ReturningCrownCrates{
+	background-color: var(--returning-crown-crates-colour);
+}
+.CrownSale{
+	background-color: var(--crown-sale-colour);
+}
+.MotifQ1{
+	background-color: var(--q1-motif-colour);
+}
+.MotifQ3{
+	background-color: var(--q3-motif-colour);
+}
+.MotifChapter{
+	background-color: var(--chapter-motif-colour);
+}
+.MotifQ4{
+	background-color: var(--q4-motif-colour);
+}
+
+.circle {
+	float:left;
+	margin: 3px;
+	width: 18px;
+	height: 18px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+.circle_old {
+	opacity: 1.4;
+}
+#eventslist{
+	margin-top: 80px;
+}
+
+.circle_hover{
+	box-shadow: 0 0 1px 2px var(--hover-colour);
+}
+.eventname_hover{
+	box-shadow: 0 0 3px 1px var(--hover-colour);
+}
+
+</style>
+</head>
+<body>
+<div class="flexcontainer">
+	<div>
+		</p>
+		<a href="index.html"> < Events</a>
+		</p>
+		<table>
+			<tbody id="eventtable">	
+				<tr id="dates" class="datesrow">
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div>
+		<ul id="eventslist">
+		</ul>
+	</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script language="JavaScript" type="text/javascript">
+    var events = 
+	[						
+		{key: "DungeonDlcQ1",	datestart: new Date(2018, 1, 12)}, 	// Dragon Bones
+		{key: "DungeonDlcQ1",	datestart: new Date(2019, 1, 25)}, 	// Wrathstone
+		{key: "DungeonDlcQ1",	datestart: new Date(2020, 1, 24)}, 	// Harrowstorm
+		
+		{key: "ChapterLaunch",	datestart: new Date(2017, 4, 22)}, 	// Morrowind
+		{key: "ChapterLaunch",	datestart: new Date(2018, 4, 21)}, 	// Summerset
+		{key: "ChapterLaunch",	datestart: new Date(2019, 4, 20)}, 	// Elsweyr
+		{key: "ChapterLaunch",	datestart: new Date(2020, 4, 26)}, 	// Greymoor
+					
+		{key: "DungeonDlcQ3",	datestart: new Date(2016, 7, 1)}, 	// Shadows of the Hist
+		{key: "DungeonDlcQ3",	datestart: new Date(2017, 7, 14)},	// Horns of the Reach
+		{key: "DungeonDlcQ3",	datestart: new Date(2018, 7, 13)},	// Wolfhunter
+		{key: "DungeonDlcQ3",	datestart: new Date(2019, 7, 12)}, 	// Scalebreaker
+		{key: "DungeonDlcQ3",	datestart: new Date(2019, 7, 24)},	// Stonethorn	
+		
+		{key: "StoryDlc",	datestart: new Date(2015, 7, 31)}, 		// Imperial City
+		{key: "StoryDlc",	datestart: new Date(2015, 10, 2)}, 		// MotifChapter
+		{key: "StoryDlc",	datestart: new Date(2016, 2, 7)},  		// Thieves Guild
+		{key: "StoryDlc",	datestart: new Date(2016, 4, 31)}, 		// Dark Brotherhood	
+		{key: "StoryDlc",	datestart: new Date(2017, 9, 23)}, 		// Clockwork City
+		{key: "StoryDlc",	datestart: new Date(2018, 9, 22)}, 		// MotifQ3
+		{key: "StoryDlc",	datestart: new Date(2019, 9, 21)}, 		// Dragonhold
+		
+		{key: "PrologueQ2",	datestart: new Date(2019, 4, 8)}, 		// Morrowind
+		{key: "PrologueQ2",	datestart: new Date(2019, 2, 21)},		// Summerset
+		{key: "PrologueQ2",	datestart: new Date(2019, 2, 25)},		// Elsweyr
+		{key: "PrologueQ2",	datestart: new Date(2019, 2, 30)},		// Greymoor
+		
+		{key: "PrologueQ4",	datestart: new Date(2019, 9, 9)}, 		// Clockwork City
+		{key: "PrologueQ4",	datestart: new Date(2019, 9, 8)},		// MotifQ3
+		{key: "PrologueQ4",	datestart: new Date(2019, 9, 8)}, 		// Dragonhold
+		
+		{key: "NewCrownCrates",	datestart: new Date(2016, 11, 1)},	// Storm Atronach Crate
+		{key: "NewCrownCrates",	datestart: new Date(2017, 2, 2)},	// Wild Hunt Crate
+		{key: "NewCrownCrates",	datestart: new Date(2017, 5, 22)},	// Dwarven Crate
+		{key: "NewCrownCrates",	datestart: new Date(2017, 8, 28)},	// Reaper's Harvest Crate
+		{key: "NewCrownCrates",	datestart: new Date(2017, 10, 28)},	// Flame Atronach Crate
+		{key: "NewCrownCrates",	datestart: new Date(2018, 2, 15)},	// Scalecaller Crate
+		{key: "NewCrownCrates",	datestart: new Date(2018, 5, 21)},	// Psijic Vault Crate
+		{key: "NewCrownCrates",	datestart: new Date(2018, 8, 20)},	// Hollowjack Crate
+		{key: "NewCrownCrates",	datestart: new Date(2018, 11, 4)},	// Xanmeer Crate
+		{key: "NewCrownCrates",	datestart: new Date(2019, 2, 28)},	// Dragonscale Crate
+		{key: "NewCrownCrates",	datestart: new Date(2019, 6, 3)},	// Baandari Pedlar Crate
+		{key: "NewCrownCrates",	datestart: new Date(2019, 8, 19)},	// New Moon Crate
+		{key: "NewCrownCrates",	datestart: new Date(2019, 11, 12)},	// Frost Atronach Crate
+		{key: "NewCrownCrates",	datestart: new Date(2020, 2, 19)},	// Gloomspore Crate
+		{key: "NewCrownCrates",	datestart: new Date(2020, 5, 18)},	// Nightfall Crate
+			
+		{key: "ReturningCrownCrates",	datestart: new Date(2017, 11, 4)},	// Storm Atronach Crate
+		{key: "ReturningCrownCrates",	datestart: new Date(2017, 11, 11)},	// Wild Hunt Crate
+		{key: "ReturningCrownCrates",	datestart: new Date(2018, 8, 10)},	// Wild Hunt Crate
+		{key: "ReturningCrownCrates",	datestart: new Date(2018, 4, 14)},	// Dwarven Crate
+		{key: "ReturningCrownCrates",	datestart: new Date(2018, 7, 9)},	// Flame Atronach Crate
+		{key: "ReturningCrownCrates",	datestart: new Date(2019, 0, 24)},	// Storm Atronach Crate
+		{key: "ReturningCrownCrates",	datestart: new Date(2019, 9, 21)},	// Reaper's Harvest Crate
+		{key: "ReturningCrownCrates",	datestart: new Date(2019, 8, 1)},	// Flame Atronach Crate
+		{key: "ReturningCrownCrates",	datestart: new Date(2019, 9, 24)},	// Hollowjack Crate
+		{key: "ReturningCrownCrates",	datestart: new Date(2020, 3, 30)},	// Storm Atronach Crate
+		{key: "ReturningCrownCrates",	datestart: new Date(2020, 0, 16)},	// Scalecaller Crate
+		{key: "ReturningCrownCrates",	datestart: new Date(2020, 6, 23)},	// Psijic Vault Crate
+		{key: "ReturningCrownCrates",	datestart: new Date(2020, 1, 20)},	// Xanmeer Crate
+		{key: "ReturningCrownCrates",	datestart: new Date(2020, 7, 20)},	// New Moon Crate
+		
+		{key: "CrownSale",		datestart: new Date(2016, 22, 16)},
+		{key: "CrownSale",		datestart: new Date(2017, 3, 11)},
+		{key: "CrownSale",		datestart: new Date(2017, 7, 22)},
+		{key: "CrownSale",		datestart: new Date(2017, 11, 21)},
+		{key: "CrownSale",		datestart: new Date(2018, 4, 4)},
+		{key: "CrownSale",		datestart: new Date(2018, 7, 7)},
+		{key: "CrownSale",		datestart: new Date(2018, 11, 20)},
+		{key: "CrownSale",		datestart: new Date(2019, 3, 22)},
+		{key: "CrownSale",		datestart: new Date(2019, 6, 23)},
+		{key: "CrownSale",		datestart: new Date(2019, 11, 19)},
+		{key: "CrownSale",		datestart: new Date(2020, 2, 31)},
+		{key: "CrownSale",		datestart: new Date(2020, 7, 4)},
+		
+		{key: "MotifQ1",	datestart: new Date(2018, 5, 27)},	// Fang Lair
+		{key: "MotifQ1",	datestart: new Date(2018, 5, 28)},	// Scalecaller
+		{key: "MotifQ1",	datestart: new Date(2019, 6, 17)},	// Coldsnap
+		{key: "MotifQ1",	datestart: new Date(2019, 7, 7)},	// Meridian
+		{key: "MotifQ1",	datestart: new Date(2020, 6, 8)},	// Pyre Watch
+		{key: "MotifQ1",	datestart: new Date(2020, 7, 12)},	// Icereach
+		
+		{key: "MotifChapter",	datestart: new Date(2018, 6, 9)},	// Welkynar
+		{key: "MotifChapter",	datestart: new Date(2019, 9, 26)},	// Pellitine
+		{key: "MotifChapter",	datestart: new Date(2019, 8, 18)},	// Sunspire
+		{key: "MotifChapter",	datestart: new Date(2020, 7, 24)},	// Sea Giant
+		
+		{key: "MotifQ3",	datestart: new Date(2018, 11, 5)},	// Silver Dawn
+		{key: "MotifQ3",	datestart: new Date(2019, 1, 13)},	// Huntsman
+		{key: "MotifQ3",	datestart: new Date(2019, 12, 4)},	// Moongrave Fane
+		{key: "MotifQ3",	datestart: new Date(2020, 0, 22)},	// Stags of Z'en
+				
+		{key: "MotifQ4",	datestart: new Date(2019, 0, 16)},	// Elder Argonian
+		{key: "MotifQ4",	datestart: new Date(2019, 4, 15)},	// Honor Guard
+		{key: "MotifQ4",	datestart: new Date(2020, 2, 18)},	// Shield of Senchal
+		{key: "MotifQ4",	datestart: new Date(2020, 3, 22)},	// New Moon Priest
+	];	
+	
+    var eventNames = 
+	{		
+		"ChapterLaunch": 	"Chapter (Q2) PC/MAC 'early access'",
+		"StoryDlc": 		"Story DLC (Q4)",
+		"DungeonDlcQ1": 	"Dungeon DLC (Q1)",
+		"DungeonDlcQ3": 	"Dungeon DLC (Q3)",
+		
+		"PrologueQ2": 		"Chapter Prologue",
+		"PrologueQ4": 		"Story DLC Prologue",
+		
+		"NewCrownCrates": 		"New Crown Crates",		
+		"ReturningCrownCrates": "Returning Crown Crates",
+		"CrownSale": 			"Crown Sale",
+		
+		"MotifQ1": 			"Dungeon Motif (Q1)",		
+		"MotifChapter": 	"Chapter Motif",
+		"MotifQ3": 			"Dungeon Motif (Q3)",
+		"MotifQ4": 			"Story DLC Motif"
+	};	
+	
+	var months = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"];
+	var monthdays = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+	var days = Array.from(Array(31), (e,i)=>i+1);
+	
+	var td = "<td class='datestd'></td>"
+	for (var i = 0; i < days.length; i++){
+		td += "<td class='datestd'>" + days[i] + "</td>\n";
+	}
+	document.getElementById("dates").innerHTML = td;
+	
+	for (var i = 0; i < months.length; i++){
+		var tr = "<tr id='" + months[i] + "'>\n";
+		tr += "<td>" + months[i] + "</td>\n";
+		
+		for (var j = 0; j < days.length; j++){
+			if (monthdays[i] < j+1)
+			{
+				tr += "<td class='doesnotexist'></td>\n";
+			}
+			else
+			{			  
+				tr += "<td id='" + months[i] + days[j] + "'></td>\n";
+			}
+		}
+		
+		tr += "</tr>\n";
+		document.getElementById("eventtable").innerHTML += tr;
+	}	
+	
+	for (var i = 0; i < events.length; i++){
+		var event = events[i];
+		var same = events.filter(function (x) { return x.key == event.key });
+		console.log("Selected events " + event.key + ": " + same.length);
+		
+		var latestDate = new Date(Math.max.apply(null, same.map( x => { return x.datestart; })));
+		console.log("Latest: " + latestDate);
+		
+		var cl = "";
+		if (event.datestart.getTime() != latestDate.getTime()) cl += " circle_old";
+		
+		var j = new Date(event.datestart);
+		var dateelement = document.getElementById(months[j.getMonth()] + j.getDate());			
+		dateelement.innerHTML += "<div class='circle c" + event.key + " " + cl + "'></div>";
+	}	
+	
+	var eventnames = events.map(item => item.key).filter((value, index, self) => self.indexOf(value) === index)
+	for (var i = 0; i < eventnames.length; i++){
+		ev = "<li class='eventinlist " + eventnames[i] + "'>" + eventNames[eventnames[i]] + "</li>";
+		document.getElementById("eventslist").innerHTML += ev;
+	}
+	
+	$(".circle").mouseenter(function(e){
+		var class_name = $(e.target).attr('class').split(' ')[1];
+		var circles = document.getElementsByClassName(class_name);
+		for (var i = 0; i < circles.length; i++){
+			$(circles[i]).addClass('circle_hover');
+		}
+		
+		var event_in_list = document.getElementsByClassName(class_name.substring(1));
+		$(event_in_list[0]).addClass('eventname_hover');
+	});
+	
+	$(".circle").mouseleave(function(e){
+		var class_name = $(e.target).attr('class').split(' ')[1];
+		var circles = document.getElementsByClassName(class_name);
+		for (var i = 0; i < circles.length; i++){
+			$(circles[i]).removeClass('circle_hover');
+		}
+		
+		var event_in_list = document.getElementsByClassName(class_name.substring(1));
+		$(event_in_list[0]).removeClass('eventname_hover');
+	});
+	
+	$(".eventinlist").mouseenter(function(e){
+		var class_name = $(e.target).attr('class').split(' ')[1];
+		var circles = document.getElementsByClassName("c" + class_name);
+		for (var i = 0; i < circles.length; i++){
+			$(circles[i]).addClass('circle_hover');
+		}
+		
+		$(e.target).addClass('eventname_hover');
+	});
+	
+	$(".eventinlist").mouseleave(function(e){
+		var class_name = $(e.target).attr('class').split(' ')[1];
+		var circles = document.getElementsByClassName("c" + class_name);
+		for (var i = 0; i < circles.length; i++){
+			$(circles[i]).removeClass('circle_hover');
+		}
+		
+		$(e.target).removeClass('eventname_hover');
+	});
+</script>
+</body>
+</html>
