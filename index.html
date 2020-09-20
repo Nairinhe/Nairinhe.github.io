@@ -23,7 +23,8 @@
 	
 	--morrowind-colour: #a8866c;	
 	--summerfall-colour: #0dbdcf;
-	--dragonrise-colour: #0285a3;	
+	--dragonrise-colour: #0285a3;
+	--losttreasure-colour: #7d4674;	
 	--clockwork-colour: #eec41b;
 	--dragonguard-colour: #e36685;
 	--murkmire-colour: #327040;
@@ -113,6 +114,9 @@ ul {
 .cDragonRise{
 	background-color: var(--dragonrise-colour);
 }
+.cLostTreasure{
+	background-color: var(--losttreasure-colour);
+}
 .cWitches{
 	background-color: var(--witches-colour);
 }
@@ -162,8 +166,11 @@ ul {
 .Summerset{
 	background-color: var(--summerfall-colour);
 }
-.Summerfall{
-	background-color: var(--summerfall-colour);
+.LostTreasure{
+	background-color: var(--losttreasure-colour);
+}
+.DragonRise{
+	background-color: var(--dragonrise-colour);
 }
 .DragonRise{
 	background-color: var(--dragonrise-colour);
@@ -271,11 +278,13 @@ ul {
 		{key: "Witches",	datestart: new Date(2017, 9, 20),	dateend: new Date(2017, 10, 1)},
 		{key: "Witches",	datestart: new Date(2018, 9, 18),	dateend: new Date(2018, 10, 1)},
 		{key: "Witches",	datestart: new Date(2019, 9, 24),	dateend: new Date(2019, 10, 11)},
+		{key: "Witches",	datestart: new Date(2020, 9, 22),	dateend: new Date(2020, 10, 3)},
 			
 		{key: "NewLife",	datestart: new Date(2016, 11, 15),	dateend: new Date(2017, 0, 4)},
 		{key: "NewLife",	datestart: new Date(2017, 11, 15),	dateend: new Date(2018, 0, 2)},
 		{key: "NewLife",	datestart: new Date(2018, 11, 13),	dateend: new Date(2019, 0, 2)},
 		{key: "NewLife",	datestart: new Date(2019, 11, 19),	dateend: new Date(2020, 0, 2)},
+		{key: "NewLife",	datestart: new Date(2020, 11, 21),	dateend: new Date(2021, 0, 2)},
 		
 		// these are traditional established events				
 		{key: "ImperialCity",	datestart: new Date(2016, 7, 29),	dateend: new Date(2016, 8, 7)},		
@@ -296,12 +305,14 @@ ul {
 			
 		{key: "Undaunted",	datestart: new Date(2018, 10, 29),	dateend: new Date(2018, 11, 5)},
 		{key: "Undaunted",	datestart: new Date(2020, 0, 9),	dateend: new Date(2020, 0, 13)},
+		{key: "Undaunted",	datestart: new Date(2020, 10, 25),	dateend: new Date(2020, 11, 12)},
 		
 		// these are chapter events		
 		{key: "Summerfall",	datestart: new Date(2018, 8, 20),	dateend: new Date(2018, 8, 28)},
 		{key: "Summerset",	datestart: new Date(2020, 6, 23),	dateend: new Date(2020, 7, 4)},
 		{key: "Morrowind",	datestart: new Date(2019, 1, 7),	dateend: new Date(2019, 1, 18)},		
-		{key: "DragonRise",	datestart: new Date(2019, 9, 3),	dateend: new Date(2019, 9, 13)},
+		{key: "DragonRise",	datestart: new Date(2019, 9, 3),	dateend: new Date(2019, 9, 13)},		
+		{key: "LostTreasure",	datestart: new Date(2020, 8, 23),	dateend: new Date(2020, 9, 5)},
 		
 		// these are irregular or new DLC events
 		{key: "ClockworkCity",	datestart: new Date(2018, 10, 15),	dateend: new Date(2018, 10, 26)},
@@ -319,10 +330,10 @@ ul {
 	{		
 		"MidyearMayhem": 	"Midyear Mayhem",
 		"Anniversary": 		"Anniversary Jubilee",
-		"Jester": 			"Jester's Festival",
+		"Jester": 		"Jester's Festival",
 		"ChapterLaunch": 	"Chapter PC/MAC 'early access'",
-		"Witches": 			"Witches Festival",
-		"NewLife": 			"New Life Festival",
+		"Witches": 		"Witches Festival",
+		"NewLife": 		"New Life Festival",
 		
 		"ImperialCity": 	"Imperial City Event",
 		"ThievesDb": 		"Thieves Guild and Dark Brotherhood Event",
@@ -333,6 +344,7 @@ ul {
 		"Summerset": 		"Summerset Event",
 		"Morrowind": 		"Morrowind Event",
 		"DragonRise": 		"Dragon Rise",
+		"LostTreasure": 	"Lost Treasures of Skyrim",
 		
 		"ClockworkCity": 	"Clockwork City Event",
 		"Dragonguard": 		"Dawn of the Dragonguard",
