@@ -55,6 +55,13 @@ ul {
 	color: white;
 	min-width: 180px;
 }
+a {
+	position: relative;
+	display: inline-block;
+	margin-left: 40px;
+	padding: 40px 0;
+}
+
 
 .flexcontainer {
 	display: flex;
@@ -207,6 +214,7 @@ ul {
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	border-radius: 4px;
+	position: relative;
 }
 .circle_old {
 	opacity: 0.4;
@@ -228,12 +236,34 @@ ul {
 	margin-left: 40px;
 }
 
+.tooltip {
+	width: 120px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	padding: 5px 0;
+	border-radius: 6px;
+	margin-left: -55px;
+	margin-bottom: 15px;
+	bottom: 120%;
+ 
+	position: absolute;
+	z-index: 1;
+}
+.tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
 </style>
 </head>
 <body>
-</p>
-<a href="index_releases.html">Releases and shinies ></a>
-</p>
 <div class="flexcontainer">
 	<div>
 		<table>
@@ -244,6 +274,9 @@ ul {
 		</table>
 	</div>
 	<div>
+		</p>
+		<a href="index_releases.html">Releases and shinies ></a>
+		</p>
 		<label id="switch">
 			<input id="switchcheck" type="checkbox" onclick="eventToggle()">
 		</label>
@@ -277,10 +310,10 @@ ul {
 		{key: "Jester",		datestart: new Date(2019, 2, 21),	dateend: new Date(2019, 3, 2)},
 		{key: "Jester",		datestart: new Date(2020, 2, 26),	dateend: new Date(2020, 3, 2)},
 			
-		{key: "ChapterLaunch",	datestart: new Date(2017, 4, 22),	dateend: new Date(2017, 5, 6)}, // Morrowind
-		{key: "ChapterLaunch",	datestart: new Date(2018, 4, 21),	dateend: new Date(2018, 5, 5)}, // Summerset
-		{key: "ChapterLaunch",	datestart: new Date(2019, 4, 20),	dateend: new Date(2019, 5, 4)}, // Elsweyr
-		{key: "ChapterLaunch",	datestart: new Date(2020, 4, 26),	dateend: new Date(2020, 5, 9)}, // Greymoor
+		{key: "ChapterLaunch",	datestart: new Date(2017, 4, 22),	dateend: new Date(2017, 5, 6),	note: "Morrowind"},
+		{key: "ChapterLaunch",	datestart: new Date(2018, 4, 21),	dateend: new Date(2018, 5, 5),	note: "Summerset"},
+		{key: "ChapterLaunch",	datestart: new Date(2019, 4, 20),	dateend: new Date(2019, 5, 4),	note: "Elsweyr"},
+		{key: "ChapterLaunch",	datestart: new Date(2020, 4, 26),	dateend: new Date(2020, 5, 9),	note: "Greymoor"},
 			
 		{key: "Witches",	datestart: new Date(2016, 9, 13),	dateend: new Date(2016, 10, 8)},
 		{key: "Witches",	datestart: new Date(2017, 9, 20),	dateend: new Date(2017, 10, 1)},
@@ -340,10 +373,10 @@ ul {
 	{		
 		"MidyearMayhem": 	"Midyear Mayhem",
 		"Anniversary": 		"Anniversary Jubilee",
-		"Jester": 		"Jester's Festival",
+		"Jester": 			"Jester's Festival",
 		"ChapterLaunch": 	"Chapter PC/MAC 'early access'",
-		"Witches": 		"Witches Festival",
-		"NewLife": 		"New Life Festival",
+		"Witches": 			"Witches Festival",
+		"NewLife": 			"New Life Festival",
 		
 		"ImperialCity": 	"Imperial City Event",
 		"ThievesDb": 		"Thieves Guild and Dark Brotherhood Event",
@@ -396,17 +429,18 @@ ul {
 	for (var i = 0; i < events.length; i++){
 		var event = events[i];
 		var same = events.filter(function (x) { return x.key == event.key });
-		console.log("Selected events " + event.key + ": " + same.length);
 		
 		var latestDate = new Date(Math.max.apply(null, same.map( x => { return x.datestart; })));
-		console.log("Latest: " + latestDate);
 		
 		var cl = "";
 		if (event.datestart.getTime() != latestDate.getTime()) cl += " circle_old";
 		
 		for (var j = new Date(event.datestart); j <= event.dateend; j.setDate(j.getDate() + 1)){
 			var dateelement = document.getElementById(months[j.getMonth()] + j.getDate());			
-			dateelement.innerHTML += "<div class='circle c" + event.key + " " + cl + "'></div>";
+			dateelement.innerHTML += 
+				"<div class='circle c" + event.key + " " + cl + "' data-year='" + 
+				event.datestart.getFullYear() + "' data-note='" + 
+				((typeof event.note !== 'undefined') ? event.note : "") + "'></div>";
 		}
 	}	
 	
@@ -417,18 +451,34 @@ ul {
 	}
 	
 	$(".circle").mouseenter(function(e){
-		var class_name = $(e.target).attr('class').split(' ')[1];
+		var etarget = e.currentTarget;
+		var eclass = $(etarget).attr('class');
+		var eyear = $(etarget).attr('data-year');
+		var enote = $(etarget).attr('data-note');
+		
+		console.log("Latest: " + eyear);
+		var class_name = eclass.split(' ')[1];
 		var circles = document.getElementsByClassName(class_name);
 		for (var i = 0; i < circles.length; i++){
 			$(circles[i]).addClass('circle_hover');
 		}
+		console.log("Latest: " + class_name);
 		
 		var event_in_list = document.getElementsByClassName(class_name.substring(1));
 		$(event_in_list[0]).addClass('eventname_hover');
+		console.log("Latest: " + class_name.substring(1));
+		
+		
+		var ename = (event_in_list[0]).innerHTML;
+		console.log("Latest: " + ename);
+		
+		(etarget).innerHTML = "<span class='tooltip'>" + enote + " " + ename + " " + eyear + "</span>";
 	});
 	
-	$(".circle").mouseleave(function(e){
-		var class_name = $(e.target).attr('class').split(' ')[1];
+	$(".circle").mouseleave(function(e){	
+		var etarget = e.currentTarget;	
+		var eclass = $(etarget).attr('class');
+		var class_name = eclass.split(' ')[1];
 		var circles = document.getElementsByClassName(class_name);
 		for (var i = 0; i < circles.length; i++){
 			$(circles[i]).removeClass('circle_hover');
@@ -436,6 +486,8 @@ ul {
 		
 		var event_in_list = document.getElementsByClassName(class_name.substring(1));
 		$(event_in_list[0]).removeClass('eventname_hover');
+		
+		(etarget).innerHTML = "";
 	});
 	
 	$(".eventinlist").mouseenter(function(e){
