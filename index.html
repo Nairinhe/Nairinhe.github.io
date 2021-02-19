@@ -31,10 +31,10 @@
 	--undaunted-colour: #b57092;
 	--exploration-colour: #8cb56e;
 	
-	--morrowind-colour: #a8866c;	
-	--summerfall-colour: #0dbdcf;
-	--dragonrise-colour: #0285a3;
-	--losttreasure-colour: #7d4674;	
+	--morrowind-colour: #a8866c;		
+	--summerset-colour: #0dbdcf;
+	--season-colour: #7d4674;	
+	
 	--clockwork-colour: #eec41b;
 	--dragonguard-colour: #e36685;
 	--murkmire-colour: #327040;
@@ -129,16 +129,10 @@ a {
 	background-color: var(--imperialcity-colour);
 }
 .cSummerset{
-	background-color: var(--summerfall-colour);
+	background-color: var(--summerset-colour);
 }
-.cSummerfall{
-	background-color: var(--summerfall-colour);
-}
-.cDragonRise{
-	background-color: var(--dragonrise-colour);
-}
-.cLostTreasure{
-	background-color: var(--losttreasure-colour);
+.cSeason{
+	background-color: var(--season-colour);
 }
 .cWitches{
 	background-color: var(--witches-colour);
@@ -193,16 +187,10 @@ a {
 	background-color: var(--imperialcity-colour);
 }
 .Summerset{
-	background-color: var(--summerfall-colour);
+	background-color: var(--summerset-colour);
 }
-.Summerfall{
-	background-color: var(--summerfall-colour);
-}
-.LostTreasure{
-	background-color: var(--losttreasure-colour);
-}
-.DragonRise{
-	background-color: var(--dragonrise-colour);
+.Season{
+	background-color: var(--season-colour);
 }
 .Witches{
 	background-color: var(--witches-colour);
@@ -367,19 +355,20 @@ a {
 		{key: "Undaunted",	datestart: new Date(2020, 0, 9),	dateend: new Date(2020, 0, 13)},
 		{key: "Undaunted",	datestart: new Date(2020, 11, 3),	dateend: new Date(2020, 11, 15)},
 		
-		// these are chapter events		
-		{key: "Summerfall",	datestart: new Date(2018, 8, 20),	dateend: new Date(2018, 8, 28)},
-		{key: "Summerset",	datestart: new Date(2020, 6, 23),	dateend: new Date(2020, 7, 4)},
+		// these are chapter and season events		
 		{key: "Morrowind",	datestart: new Date(2019, 1, 7),	dateend: new Date(2019, 1, 18)},		
-		{key: "DragonRise",	datestart: new Date(2019, 9, 3),	dateend: new Date(2019, 9, 13)},		
-		{key: "LostTreasure",	datestart: new Date(2020, 8, 23),	dateend: new Date(2020, 9, 5)},
+		{key: "Summerset",	datestart: new Date(2020, 6, 23),	dateend: new Date(2020, 7, 4)},
+		
+		{key: "Season",		datestart: new Date(2018, 8, 20),	dateend: new Date(2018, 8, 28),		note: "Summerfall"},
+		{key: "Season",		datestart: new Date(2019, 9, 3),	dateend: new Date(2019, 9, 13),		note: "Dragon Rise"},		
+		{key: "Season",		datestart: new Date(2020, 8, 23),	dateend: new Date(2020, 9, 5),		note: "Lost Treasures of Skyrim"},
 		
 		// these are irregular or new DLC events
 		{key: "ClockworkCity",	datestart: new Date(2018, 10, 15),	dateend: new Date(2018, 10, 26)},
 		{key: "Dragonguard",	datestart: new Date(2019, 10, 26),	dateend: new Date(2019, 11, 9)},		
-		{key: "Murkmire",	datestart: new Date(2020, 1, 20),	dateend: new Date(2020, 2, 3)},			
+		{key: "Murkmire",	datestart: new Date(2020, 1, 20),		dateend: new Date(2020, 2, 3)},			
 		{key: "Exploration",	datestart: new Date(2020, 10, 12),	dateend: new Date(2020, 10, 16)},
-		{key: "Tribunal",	datestart: new Date(2021, 1, 25),	dateend: new Date(2021, 2, 9)},	
+		{key: "Tribunal",	datestart: new Date(2021, 1, 25),		dateend: new Date(2021, 2, 9)},	
 			
 		// other events
 		{key: "BlackFriday",	datestart: new Date(2016, 10, 23),	dateend: new Date(2016, 10, 28)},
@@ -404,11 +393,9 @@ a {
 		"Undaunted": 		"Undaunted Celebration",
 		"Exploration": 		"Exploration Weekend",
 		
-		"Summerfall": 		"Summerfall",
 		"Summerset": 		"Summerset Event",
 		"Morrowind": 		"Morrowind Event",
-		"DragonRise": 		"Dragon Rise",
-		"LostTreasure": 	"Lost Treasures of Skyrim",
+		"Season": 			"Season's Chapter Event",
 		
 		"ClockworkCity": 	"Clockwork City Event",
 		"Dragonguard": 		"Dawn of the Dragonguard",
@@ -454,7 +441,7 @@ a {
 		var latestDate = new Date(Math.max.apply(null, same.map( x => { return x.datestart; })));
 		
 		var cl = "";
-		if (event.datestart.getTime() != latestDate.getTime()) cl += " circle_old";
+		if (event.datestart.getTime() != latestDate.getTime() || event.datestart.getFullYear() < new Date().getFullYear() - 1) cl += " circle_old";
 		
 		for (var j = new Date(event.datestart); j <= event.dateend; j.setDate(j.getDate() + 1)){
 			var dateelement = document.getElementById(months[j.getMonth()] + j.getDate());			
