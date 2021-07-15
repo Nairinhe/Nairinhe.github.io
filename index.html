@@ -33,6 +33,7 @@
 	
 	--morrowind-colour: #a8866c;		
 	--summerset-colour: #0dbdcf;
+	--elsweyr-colour: #e6b25a;
 	--season-colour: #7d4674;	
 	
 	--clockwork-colour: #eec41b;
@@ -152,6 +153,9 @@ a {
 .cTribunal{
 	background-color: var(--tribunal-colour);
 }
+.cElsweyr{
+	background-color: var(--elsweyr-colour);
+}
 
 .Anniversary{
 	background-color: var(--anniversary-colour);
@@ -209,6 +213,9 @@ a {
 }
 .Tribunal{
 	background-color: var(--tribunal-colour);
+}
+.Elsweyr{
+	background-color: var(--elsweyr-colour);
 }
 
 .circle {
@@ -369,9 +376,10 @@ a {
 		// these are irregular or new DLC events
 		{key: "ClockworkCity",	datestart: new Date(2018, 10, 15),	dateend: new Date(2018, 10, 26)},
 		{key: "Dragonguard",	datestart: new Date(2019, 10, 26),	dateend: new Date(2019, 11, 9)},		
-		{key: "Murkmire",	datestart: new Date(2020, 1, 20),		dateend: new Date(2020, 2, 3)},			
+		{key: "Murkmire",	datestart: new Date(2020, 1, 20),	dateend: new Date(2020, 2, 3)},			
 		{key: "Exploration",	datestart: new Date(2020, 10, 12),	dateend: new Date(2020, 10, 16)},
-		{key: "Tribunal",	datestart: new Date(2021, 1, 25),		dateend: new Date(2021, 2, 9)},	
+		{key: "Tribunal",	datestart: new Date(2021, 1, 25),	dateend: new Date(2021, 2, 9)},	
+		{key: "Elsweyr",	datestart: new Date(2021, 6, 22),	dateend: new Date(2021, 7, 3)},	
 			
 		// other events
 		{key: "BlackFriday",	datestart: new Date(2016, 10, 23),	dateend: new Date(2016, 10, 28)},
@@ -404,6 +412,7 @@ a {
 		"Dragonguard": 		"Dawn of the Dragonguard",
 		"Murkmire": 		"Murkmire Event",
 		"Tribunal": 		"Tribunal Celebration",
+		"Elsweyr": 		"Pan-Elsweyr Celebration",
 		
 		"BlackFriday": 		"Black Fredas Sale"
 	};	
