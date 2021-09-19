@@ -1,0 +1,97 @@
+:root {
+	--anniversary-colour: #ff731c;
+	--jester-colour: #ff45a3;
+	--chapterlaunch-colour: #0ecca7;
+	--witches-colour: #4b30c7;
+	--newlife-colour: #4fcaff;
+
+	--blackfriday-colour: #b0b0b0;
+
+	--mayhem-colour: #e33d3d;
+
+	--imperialcity-colour: #7e63b8;
+	--thievesdb-colour: #589929;
+	--orsinium-colour: #808080;
+	--year-one-colour: #706365;
+
+	--undaunted-colour: #b57092;
+	--exploration-colour: #8cb56e;
+
+	--morrowind-colour: #a8866c;
+	--summerset-colour: #0dbdcf;
+	--elsweyr-colour: #e6b25a;
+	--blackwood-colour: #418080;
+	--season-colour: #7d4674;
+
+	--clockwork-colour: #eec41b;
+	--dragonguard-colour: #e36685;
+	--murkmire-colour: #327040;
+	--tribunal-colour: #c4a26a;
+}
+
+.Anniversary{
+	background-color: var(--anniversary-colour);
+}
+.Murkmire{
+	background-color: var(--murkmire-colour);
+}
+.MidyearMayhem{
+	background-color: var(--mayhem-colour);
+}
+.Undaunted{
+	background-color: var(--undaunted-colour);
+}
+.Exploration{
+	background-color: var(--exploration-colour);
+}
+.Morrowind{
+	background-color: var(--morrowind-colour);
+}
+.ThievesDb{
+	background-color: var(--thievesdb-colour);
+}
+.Jester{
+	background-color: var(--jester-colour);
+}
+.ChapterLaunch{
+	background-color: var(--chapterlaunch-colour);
+}
+.Orsinium{
+	background-color: var(--orsinium-colour);
+}
+.ImperialCity{
+	background-color: var(--imperialcity-colour);
+}
+.Summerset{
+	background-color: var(--summerset-colour);
+}
+.Season{
+	background-color: var(--season-colour);
+}
+.Witches{
+	background-color: var(--witches-colour);
+}
+.ClockworkCity{
+	background-color: var(--clockwork-colour);
+}
+.BlackFriday{
+	background-color: var(--blackfriday-colour);
+}
+.Dragonguard{
+	background-color: var(--dragonguard-colour);
+}
+.NewLife{
+	background-color: var(--newlife-colour);
+}
+.Tribunal{
+	background-color: var(--tribunal-colour);
+}
+.YearOne{
+	background-color: var(--year-one-colour);
+}
+.Elsweyr{
+	background-color: var(--elsweyr-colour);
+}
+.Blackwood{
+	background-color: var(--blackwood-colour);
+}

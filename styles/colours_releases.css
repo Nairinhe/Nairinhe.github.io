@@ -1,0 +1,58 @@
+:root {
+	--q1-dlc-colour: #8c6b52;
+	--chapterlaunch-colour: #0b967b;
+	--q3-dlc-colour: #656565;
+	--story-dlc-colour: #853d60;
+
+	--q2-prologue-colour: #0285a3;
+	--q4-prologue-colour: #cf5a44;
+
+	--new-crown-crates-colour: #eec41b;
+	--returning-crown-crates-colour: #c7a72c;
+	--crown-sale-colour: #ff59ad;
+
+	--q1-motif-colour: #948172;
+	--chapter-motif-colour: #6fa69b;
+	--q3-motif-colour: #999797;
+	--q4-motif-colour: #997185;
+}
+
+.StoryDlc{
+	background-color: var(--story-dlc-colour);
+}
+.ChapterLaunch{
+	background-color: var(--chapterlaunch-colour);
+}
+.DungeonDlcQ1{
+	background-color: var(--q1-dlc-colour);
+}
+.DungeonDlcQ3{
+	background-color: var(--q3-dlc-colour);
+}
+.PrologueQ2{
+	background-color: var(--q2-prologue-colour);
+}
+.PrologueQ4{
+	background-color: var(--q4-prologue-colour);
+}
+.NewCrates{
+	background-color: var(--new-crown-crates-colour);
+}
+.ReturningCrates{
+	background-color: var(--returning-crown-crates-colour);
+}
+.CrownSale{
+	background-color: var(--crown-sale-colour);
+}
+.MotifQ1{
+	background-color: var(--q1-motif-colour);
+}
+.MotifQ3{
+	background-color: var(--q3-motif-colour);
+}
+.MotifChapter{
+	background-color: var(--chapter-motif-colour);
+}
+.MotifQ4{
+	background-color: var(--q4-motif-colour);
+}
