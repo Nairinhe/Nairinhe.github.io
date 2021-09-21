@@ -74,6 +74,7 @@ var events =
 		{key: "NewCrates",	datestart: new Date(2020, 8, 24),	note: "Sovngarde"},
 		{key: "NewCrates",	datestart: new Date(2020, 11, 10),	note: "Akaviri Potentate"},
 		{key: "NewCrates",	datestart: new Date(2020, 5, 17),	note: "Iron Atronach"},
+		{key: "NewCrates",	datestart: new Date(2020, 8, 23),	 note: "Grim Harlequin"},
 
 		{key: "ReturningCrates",	datestart: new Date(2017, 11, 4),	note: "Storm Atronach"},
 		{key: "ReturningCrates",	datestart: new Date(2017, 11, 11),	note: "Wild Hunt"},
