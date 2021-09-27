@@ -98,6 +98,7 @@ var events =
 		{key: "Season",		datestart: new Date(2018, 8, 20),	dateend: new Date(2018, 8, 28),		note: "Summerfall"},
 		{key: "Season",		datestart: new Date(2019, 9, 3),	dateend: new Date(2019, 9, 13),		note: "Dragon Rise"},
 		{key: "Season",		datestart: new Date(2020, 8, 23),	dateend: new Date(2020, 9, 5),		note: "Lost Treasures of Skyrim"},
+		{key: "Season",		datestart: new Date(2021, 8, 30),	dateend: new Date(2021, 9, 12),		note: "Bounties of Blackwood"},
 
 		// these are irregular or new DLC events
 		{key: "ClockworkCity",	datestart: new Date(2018, 10, 15),	dateend: new Date(2018, 10, 26)},
