@@ -11,7 +11,7 @@ var eventNames =
   "ThievesDb"     : "Thieves Guild and Dark Brotherhood Event",
   "Orsinium"      : "Orsinium Event",
   "Undaunted"     : "Undaunted Celebration",
-  "Exploration"   : "Exploration Weekend",
+  "Exploration"   : "Explorer's Celebration",
 	"YearOne"       : "Year One Celebration",
 
   "Summerset"     : "Summerset Event",
@@ -105,6 +105,7 @@ var events =
 		{key: "Dragonguard",	datestart: new Date(2019, 10, 26),	dateend: new Date(2019, 11, 9)},
 		{key: "Murkmire",	datestart: new Date(2020, 1, 20),	dateend: new Date(2020, 2, 3)},
 		{key: "Exploration",	datestart: new Date(2020, 10, 12),	dateend: new Date(2020, 10, 16)},
+		{key: "Exploration",	datestart: new Date(2021, 9, 12),	dateend: new Date(2021, 9, 20)},
 		{key: "Tribunal",	datestart: new Date(2021, 1, 25),	dateend: new Date(2021, 2, 9)},
 		{key: "Elsweyr",	datestart: new Date(2021, 6, 22),	dateend: new Date(2021, 7, 3)},
 		{key: "YearOne",	datestart: new Date(2021, 7, 26),	dateend: new Date(2021, 8, 7)},
