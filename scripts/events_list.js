@@ -63,6 +63,7 @@ var events =
 		{key: "Witches",	datestart: new Date(2018, 9, 18),	dateend: new Date(2018, 10, 1)},
 		{key: "Witches",	datestart: new Date(2019, 9, 24),	dateend: new Date(2019, 10, 11)},
 		{key: "Witches",	datestart: new Date(2020, 9, 22),	dateend: new Date(2020, 10, 3)},
+		{key: "Witches",	datestart: new Date(2021, 9, 21),	dateend: new Date(2021, 10, 2)},
 
 		{key: "NewLife",	datestart: new Date(2016, 11, 15),	dateend: new Date(2017, 0, 4)},
 		{key: "NewLife",	datestart: new Date(2017, 11, 15),	dateend: new Date(2018, 0, 2)},
