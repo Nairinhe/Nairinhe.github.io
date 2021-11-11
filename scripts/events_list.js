@@ -91,6 +91,7 @@ var events =
 		{key: "Undaunted",	datestart: new Date(2018, 10, 29),	dateend: new Date(2018, 11, 5)},
 		{key: "Undaunted",	datestart: new Date(2020, 0, 9),	dateend: new Date(2020, 0, 13)},
 		{key: "Undaunted",	datestart: new Date(2020, 11, 3),	dateend: new Date(2020, 11, 15)},
+		{key: "Undaunted",	datestart: new Date(2021, 10, 18),	dateend: new Date(2021, 10, 30)},
 
 		// these are chapter and season events
 		{key: "Morrowind",	datestart: new Date(2019, 1, 7),	dateend: new Date(2019, 1, 18)},
