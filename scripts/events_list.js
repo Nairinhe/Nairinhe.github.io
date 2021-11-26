@@ -118,4 +118,5 @@ var events =
 		{key: "BlackFriday",	datestart: new Date(2018, 10, 21),	dateend: new Date(2018, 10, 27)},
 		{key: "BlackFriday",	datestart: new Date(2019, 10, 26),	dateend: new Date(2019, 11, 3)},
 		{key: "BlackFriday",	datestart: new Date(2020, 10, 25),	dateend: new Date(2020, 10, 30)},
+		{key: "BlackFriday",	datestart: new Date(2021, 10, 24),	dateend: new Date(2021, 10, 29)},
 ];
