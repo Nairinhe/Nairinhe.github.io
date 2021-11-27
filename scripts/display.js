@@ -36,3 +36,8 @@ for (var i = 0; i < months.length; i++){
   tr += "</tr>\n";
   document.getElementsByTagName("tbody")[0].innerHTML += tr;
 };
+
+var today = new Date();
+var todayId = months[today.getMonth()] + today.getDate();
+var todayCell = document.getElementById(todayId);
+$(document.getElementById(todayId)).addClass("today");

@@ -92,6 +92,10 @@ td {
   vertical-align: middle;
 }
 
+.today {
+	box-shadow: 0 0 5px 4px var(--root-colour) inset;
+}
+
 .circle, .circle_old {
 	float:left;
 	position: relative;
