@@ -92,7 +92,7 @@ td {
   vertical-align: middle;
 }
 
-.today {
+.today, .today_fixed {
 	box-shadow: 0 0 5px 4px var(--root-colour) inset;
 }
 

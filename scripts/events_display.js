@@ -11,11 +11,15 @@ for (var i = 0; i < events.length; i++)
   var isOld = (event.datestart.getFullYear() != latestDate.getFullYear()) || (event.datestart.getFullYear() < new Date().getFullYear() - 1);
   var circleClass = (isOld ? "circle circle_old" : "circle");
 
+  var dateStart = new Date(event.datestart);
   for (var j = new Date(event.datestart); j <= event.dateend; j.setDate(j.getDate() + 1)){
     var dateelement = document.getElementById(months[j.getMonth()] + j.getDate());
     dateelement.innerHTML +=
-      "<div class='" + event.key + " " + circleClass + "' data-year='" +
-      event.datestart.getFullYear() + "' data-note='" +
+      "<div class='" + event.key + " " + circleClass + "' " +
+      "data-year='" + dateStart.getFullYear() + "' " +
+      "data-month='" + dateStart.getMonth() + "' " +
+      "data-day='" + dateStart.getDate() + "' " +
+      "data-note='" +
       ((typeof event.note !== 'undefined') ? event.note : "") + "'></div>";
   }
 };

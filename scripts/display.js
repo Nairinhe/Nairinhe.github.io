@@ -40,4 +40,47 @@ for (var i = 0; i < months.length; i++){
 var today = new Date();
 var todayId = months[today.getMonth()] + today.getDate();
 var todayCell = document.getElementById(todayId);
-$(document.getElementById(todayId)).addClass("today");
+$(document.getElementById(todayId)).addClass("today_fixed");
+
+// hover on cells
+$("td").mouseenter(function(e){
+  var parentTd = e.currentTarget;
+  var parentTr = parentTd.parentElement;
+
+  var monthName = $(parentTr).attr('id');
+  if (monthName){
+    var monthCell = $(parentTr).children("td:first")[0];
+    $(monthCell).addClass('today');
+  }
+
+  var table = document.getElementsByTagName('tbody')[0];
+  var dayId = $(parentTd).attr('id');
+  if (dayId){
+    var day = $(parentTd).attr('id').replace(monthName, '');
+    var dayCell = $($(table).children('tr:first')[0]).children('td')[day];
+    $(dayCell).addClass('today');
+  }
+
+  $(parentTd).addClass('today');
+});
+
+$("td").mouseleave(function(e){
+  var parentTd = e.currentTarget;
+  var parentTr = parentTd.parentElement;
+
+  var monthName = $(parentTr).attr('id');
+  if (monthName){
+    var monthCell = $(parentTr).children("td:first")[0];
+    $(monthCell).removeClass('today');
+  }
+
+  var table = document.getElementsByTagName('tbody')[0];
+  var dayId = $(parentTd).attr('id');
+  if (dayId){
+    var day = $(parentTd).attr('id').replace(monthName, '');
+    var dayCell = $($(table).children('tr:first')[0]).children('td')[day];
+    $(dayCell).removeClass('today');
+  }
+
+  $(parentTd).removeClass('today');
+});

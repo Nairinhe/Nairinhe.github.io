@@ -5,7 +5,12 @@ $(".circle").mouseenter(function(e){
   var etarget = e.currentTarget;
   var eclass = $(etarget).attr('class');
   var eyear = $(etarget).attr('data-year');
+  var emonth = $(etarget).attr('data-month');
+  var eday = $(etarget).attr('data-day');
   var enote = $(etarget).attr('data-note');
+
+  var weekDay = new Date(eyear, emonth, eday);
+  var weekDayName = weekDay.toLocaleDateString('en-US', {weekday: 'long'});
 
   var class_name = eclass.split(' ')[0];
   var events = document.getElementsByClassName(class_name);
@@ -17,7 +22,7 @@ $(".circle").mouseenter(function(e){
   $(etarget).removeClass('circle_old');
 
   var ename = eventNames[class_name];
-  (etarget).innerHTML = "<span class='tooltip'>" + enote + " " + ename + " " + eyear + "</span>";
+  etarget.innerHTML = "<span class='tooltip'>" + enote + " " + ename + " " + eyear + " (" + weekDayName + ")</span>";
 });
 
 $(".circle").mouseleave(function(e){

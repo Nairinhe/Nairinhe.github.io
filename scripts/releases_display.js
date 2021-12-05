@@ -6,10 +6,13 @@ for (var i = 0; i < events.length; i++){
 
   var latestDate = new Date(Math.max.apply(null, same.map( x => { return x.datestart; })));
 
-  var j = new Date(event.datestart);
-  var dateelement = document.getElementById(months[j.getMonth()] + j.getDate());
+  var dateStart = new Date(event.datestart);
+  var dateelement = document.getElementById(months[dateStart.getMonth()] + dateStart.getDate());
   dateelement.innerHTML +=
-    "<div class='" + event.key + " circle' data-year='" +
-    event.datestart.getFullYear() + "' data-note='" +
+    "<div class='" + event.key + " circle' " +
+    "data-year='" + dateStart.getFullYear() + "' " +
+    "data-month='" + dateStart.getMonth() + "' " +
+    "data-day='" + dateStart.getDate() + "' " +
+    "data-note='" +
     ((typeof event.note !== 'undefined') ? event.note : "") + "'></div>";
 };
