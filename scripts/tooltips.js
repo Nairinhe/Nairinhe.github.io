@@ -10,6 +10,9 @@ $(".circle").mouseenter(function(e){
   var enote = $(etarget).attr('data-note');
 
   var weekDay = new Date(eyear, emonth, eday);
+  console.log(eyear + " " + emonth + " " + eday);
+  console.log(weekDay);
+  console.log(weekDay.toLocaleDateString('en-US'));
   var weekDayName = weekDay.toLocaleDateString('en-US', {weekday: 'long'});
 
   var class_name = eclass.split(' ')[0];
