@@ -78,6 +78,7 @@ var events =
 		{key: "NewCrates",	datestart: new Date(2021, 2, 18),	 note: "Ayleid"},
 		{key: "NewCrates",	datestart: new Date(2021, 5, 17),	note: "Iron Atronach"},
 		{key: "NewCrates",	datestart: new Date(2021, 8, 23),	 note: "Grim Harlequin"},
+		{key: "NewCrates",	datestart: new Date(2021, 11, 9),	 note: "Celestial"},
 
 		{key: "ReturningCrates",	datestart: new Date(2017, 11, 4),	note: "Storm Atronach"},
 		{key: "ReturningCrates",	datestart: new Date(2017, 11, 11),	note: "Wild Hunt"},
