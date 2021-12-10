@@ -70,6 +70,7 @@ var events =
 		{key: "NewLife",	datestart: new Date(2018, 11, 13),	dateend: new Date(2019, 0, 2)},
 		{key: "NewLife",	datestart: new Date(2019, 11, 19),	dateend: new Date(2020, 0, 2)},
 		{key: "NewLife",	datestart: new Date(2020, 11, 17),	dateend: new Date(2021, 0, 5)},
+		{key: "NewLife",	datestart: new Date(2021, 11, 16),	dateend: new Date(2022, 0, 4)},
 
 		// these are traditional established events
 		{key: "ImperialCity",	datestart: new Date(2016, 7, 29),	dateend: new Date(2016, 8, 7)},
