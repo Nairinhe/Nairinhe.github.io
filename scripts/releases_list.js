@@ -116,6 +116,7 @@ var events =
 		{key: "CrownSale",		datestart: new Date(2020, 7, 4)},
 		{key: "CrownSale",		datestart: new Date(2020, 11, 22)},
 		{key: "CrownSale",		datestart: new Date(2021, 7, 17)},
+		{key: "CrownSale",		datestart: new Date(2021, 11, 22)},
 
 		{key: "MotifQ1",	datestart: new Date(2018, 5, 27),	note: "Fang Lair"},
 		{key: "MotifQ1",	datestart: new Date(2018, 5, 28),	note: "Scalecaller"},
