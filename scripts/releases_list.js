@@ -38,6 +38,7 @@ var events =
 		{key: "DungeonDlcQ3",	datestart: new Date(2018, 7, 13),	note: "Wolfhunter"},
 		{key: "DungeonDlcQ3",	datestart: new Date(2019, 7, 12),	note: "Scalebreaker"},
 		{key: "DungeonDlcQ3",	datestart: new Date(2020, 7, 24),	note: "Stonethorn"},
+		{key: "DungeonDlcQ3",	datestart: new Date(2021, 7, 23),	note: "Waking Flame"},
 
 		{key: "StoryDlc",	datestart: new Date(2015, 7, 31),	note: "Imperial City"},
 		{key: "StoryDlc",	datestart: new Date(2015, 10, 2),	note: "Orsinium"},
@@ -103,6 +104,7 @@ var events =
 		{key: "ReturningCrates",	datestart: new Date(2021, 8, 2),	note: "Gloomspore"},
 		{key: "ReturningCrates",	datestart: new Date(2021, 9, 21),	note: "Reaper's Harvest"},
 		{key: "ReturningCrates",	datestart: new Date(2021, 10, 18),	note: "Frost Atronach"},
+		 // assumption {key: "ReturningCrates",	datestart: new Date(2022, 0, 20),	note: "Psijic Vault"},
 
 		{key: "CrownSale",		datestart: new Date(2016, 11, 23)},
 		{key: "CrownSale",		datestart: new Date(2017, 3, 11)},
@@ -171,6 +173,7 @@ var events =
 		{key: "MotifQ3",	datestart: new Date(2020, 0, 22),	note: "Stags of Z'en"},
 		{key: "MotifQ3",	datestart: new Date(2021, 0, 6),	note: "Hazardous Alchemy"},
 		{key: "MotifQ3",	datestart: new Date(2021, 1, 17),	note: "Thorn Legion"},
+		{key: "MotifQ3",	datestart: new Date(2022, 0, 5),	note: "Crimson Oath"},
 
 		{key: "MotifQ4",	datestart: new Date(2019, 0, 16),	note: "Elder Argonian"},
 		{key: "MotifQ4",	datestart: new Date(2019, 4, 15),	note: "Honor Guard"},

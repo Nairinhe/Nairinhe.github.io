@@ -27,6 +27,7 @@
 	--dragonguard-colour: #e36685;
 	--murkmire-colour: #327040;
 	--tribunal-colour: #c4a26a;
+	--daedric-war-colour: #931dcf;
 }
 
 .Anniversary{
@@ -85,6 +86,9 @@
 }
 .Tribunal{
 	background-color: var(--tribunal-colour);
+}
+.DaedricWar{
+	background-color: var(--daedric-war-colour);
 }
 .YearOne{
 	background-color: var(--year-one-colour);

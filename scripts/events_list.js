@@ -8,8 +8,6 @@ var eventNames =
   "NewLife"       : "New Life Festival",
 
   "ImperialCity"  : "Imperial City Event",
-  "ThievesDb"     : "Thieves Guild and Dark Brotherhood Event",
-  "Orsinium"      : "Orsinium Event",
   "Undaunted"     : "Undaunted Celebration",
   "Exploration"   : "Explorer's Celebration",
 	"YearOne"       : "Year One Celebration",
@@ -19,12 +17,17 @@ var eventNames =
 	"Elsweyr"       : "Pan-Elsweyr Celebration",
   "Season"        : "Season's Chapter Event",
 
-  "ClockworkCity" : "Clockwork City Event",
   "Dragonguard"   : "Dawn of the Dragonguard",
   "Murkmire"      : "Murkmire Event",
   "Tribunal"      : "Tribunal Celebration",
+  "DaedricWar"    : "Daedric War Celebration",
 
-  "BlackFriday"   : "Black Fredas Sale"
+  "BlackFriday"   : "Black Fredas Sale",
+
+  // old events go here
+  "ThievesDb"     : "Thieves Guild and Dark Brotherhood Event",
+  "Orsinium"      : "Orsinium Event",
+  "ClockworkCity" : "Clockwork City Event",
 };
 
 var events =
@@ -79,16 +82,6 @@ var events =
 		{key: "ImperialCity",	datestart: new Date(2019, 8, 5),	dateend: new Date(2019, 8, 16)},
 		{key: "ImperialCity",	datestart: new Date(2020, 8, 3),	dateend: new Date(2020, 8, 15)},
 
-		{key: "ThievesDb",	datestart: new Date(2017, 2, 6),	dateend: new Date(2017, 2, 20)},
-		{key: "ThievesDb",	datestart: new Date(2018, 2, 1),	dateend: new Date(2018, 2, 12)},
-		{key: "ThievesDb",	datestart: new Date(2019, 2, 7),	dateend: new Date(2019, 2, 18)},
-		{key: "ThievesDb",	datestart: new Date(2019, 6, 2),	dateend: new Date(2019, 6, 15)},
-
-		{key: "Orsinium",	datestart: new Date(2016, 10, 7),	dateend: new Date(2016, 10, 21)},
-		{key: "Orsinium",	datestart: new Date(2017, 10, 16),	dateend: new Date(2017, 10, 27)},
-		{key: "Orsinium",	datestart: new Date(2018, 7, 2),	dateend: new Date(2018, 7, 13)},
-		{key: "Orsinium",	datestart: new Date(2019, 7, 8),	dateend: new Date(2019, 7, 19)},
-
 		{key: "Undaunted",	datestart: new Date(2018, 10, 29),	dateend: new Date(2018, 11, 5)},
 		{key: "Undaunted",	datestart: new Date(2020, 0, 9),	dateend: new Date(2020, 0, 13)},
 		{key: "Undaunted",	datestart: new Date(2020, 11, 3),	dateend: new Date(2020, 11, 15)},
@@ -104,7 +97,6 @@ var events =
 		{key: "Season",		datestart: new Date(2021, 8, 30),	dateend: new Date(2021, 9, 12),		note: "Bounties of Blackwood"},
 
 		// these are irregular or new DLC events
-		{key: "ClockworkCity",	datestart: new Date(2018, 10, 15),	dateend: new Date(2018, 10, 26)},
 		{key: "Dragonguard",	datestart: new Date(2019, 10, 26),	dateend: new Date(2019, 11, 9)},
 		{key: "Murkmire",	datestart: new Date(2020, 1, 20),	dateend: new Date(2020, 2, 3)},
 		{key: "Exploration",	datestart: new Date(2020, 10, 12),	dateend: new Date(2020, 10, 16)},
@@ -112,6 +104,7 @@ var events =
 		{key: "Tribunal",	datestart: new Date(2021, 1, 25),	dateend: new Date(2021, 2, 9)},
 		{key: "Elsweyr",	datestart: new Date(2021, 6, 22),	dateend: new Date(2021, 7, 3)},
 		{key: "YearOne",	datestart: new Date(2021, 7, 26),	dateend: new Date(2021, 8, 7)},
+    // assumption {key: "DaedricWar",	datestart: new Date(2022, 0, 20),	dateend: new Date(2022, 0, 27)},
 
 		// other events
 		{key: "BlackFriday",	datestart: new Date(2016, 10, 23),	dateend: new Date(2016, 10, 28)},
@@ -120,4 +113,17 @@ var events =
 		{key: "BlackFriday",	datestart: new Date(2019, 10, 26),	dateend: new Date(2019, 11, 3)},
 		{key: "BlackFriday",	datestart: new Date(2020, 10, 25),	dateend: new Date(2020, 10, 30)},
 		{key: "BlackFriday",	datestart: new Date(2021, 10, 24),	dateend: new Date(2021, 10, 29)},
+
+    // old events
+		{key: "ClockworkCity",	datestart: new Date(2018, 10, 15),	dateend: new Date(2018, 10, 26)},
+
+		{key: "Orsinium",	datestart: new Date(2016, 10, 7),	dateend: new Date(2016, 10, 21)},
+		{key: "Orsinium",	datestart: new Date(2017, 10, 16),	dateend: new Date(2017, 10, 27)},
+		{key: "Orsinium",	datestart: new Date(2018, 7, 2),	dateend: new Date(2018, 7, 13)},
+		{key: "Orsinium",	datestart: new Date(2019, 7, 8),	dateend: new Date(2019, 7, 19)},
+
+		{key: "ThievesDb",	datestart: new Date(2017, 2, 6),	dateend: new Date(2017, 2, 20)},
+		{key: "ThievesDb",	datestart: new Date(2018, 2, 1),	dateend: new Date(2018, 2, 12)},
+		{key: "ThievesDb",	datestart: new Date(2019, 2, 7),	dateend: new Date(2019, 2, 18)},
+		{key: "ThievesDb",	datestart: new Date(2019, 6, 2),	dateend: new Date(2019, 6, 15)},
 ];
