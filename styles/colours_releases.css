@@ -10,6 +10,8 @@
 	--new-crown-crates-colour: #eec41b;
 	--returning-crown-crates-colour: #c7a72c;
 	--crown-sale-colour: #ff59ad;
+	--eso-plus-colour: #79c44d;
+	--free-play-colour: #42c6ff;
 
 	--q1-motif-colour: #948172;
 	--chapter-motif-colour: #6fa69b;
@@ -43,6 +45,12 @@
 }
 .CrownSale{
 	background-color: var(--crown-sale-colour);
+}
+.EsoPlusTrial{
+	background-color: var(--eso-plus-colour);
+}
+.FreePlay{
+	background-color: var(--free-play-colour);
 }
 .MotifQ1{
 	background-color: var(--q1-motif-colour);
