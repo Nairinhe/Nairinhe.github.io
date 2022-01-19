@@ -1,6 +1,6 @@
 var eventNames =
 {
-  "MidyearMayhem" : "Midyear Mayhem",
+  "MidyearMayhem" : "Midyear/Whitestrake's Mayhem",
   "Anniversary"   : "Anniversary Jubilee",
   "Jester"        : "Jester's Festival",
   "ChapterLaunch" : "Chapter PC/MAC 'early access'",
