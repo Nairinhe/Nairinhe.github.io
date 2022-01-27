@@ -60,6 +60,7 @@ var events =
 		{key: "ChapterLaunch",	datestart: new Date(2019, 4, 20),	dateend: new Date(2019, 5, 4),	note: "Elsweyr"},
 		{key: "ChapterLaunch",	datestart: new Date(2020, 4, 26),	dateend: new Date(2020, 5, 9),	note: "Greymoor"},
 		{key: "ChapterLaunch",	datestart: new Date(2021, 5, 1),	dateend: new Date(2021, 5, 8),	note: "Blackwood"},
+		{key: "ChapterLaunch",	datestart: new Date(2022, 5, 6),	dateend: new Date(2022, 5, 21),  note: "High Isle"},
 
 		{key: "Witches",	datestart: new Date(2016, 9, 13),	dateend: new Date(2016, 10, 8)},
 		{key: "Witches",	datestart: new Date(2017, 9, 20),	dateend: new Date(2017, 10, 1)},
