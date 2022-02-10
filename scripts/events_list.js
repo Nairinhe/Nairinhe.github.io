@@ -40,6 +40,7 @@ var events =
 		{key: "MidyearMayhem",	datestart: new Date(2020, 5, 25),	dateend: new Date(2020, 6, 8)},
 		{key: "MidyearMayhem",	datestart: new Date(2021, 0, 28),	dateend: new Date(2021, 1, 9)},
 		{key: "MidyearMayhem",	datestart: new Date(2021, 5, 24),	dateend: new Date(2021, 6, 6)},
+		{key: "MidyearMayhem",	datestart: new Date(2022, 1, 17),	dateend: new Date(2022, 2, 1)},
 
 		// those events are persistent because are tied to IRL stuff
 		{key: "Anniversary",	datestart: new Date(2016, 3, 4),	dateend: new Date(2016, 3, 12)},

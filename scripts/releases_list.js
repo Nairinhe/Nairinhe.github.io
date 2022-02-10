@@ -107,6 +107,7 @@ var events =
 		{key: "ReturningCrates",	datestart: new Date(2021, 9, 21),	note: "Reaper's Harvest"},
 		{key: "ReturningCrates",	datestart: new Date(2021, 10, 18),	note: "Frost Atronach"},
 		{key: "ReturningCrates",	datestart: new Date(2022, 0, 20),	note: "Psijic Vault"},
+		{key: "ReturningCrates",	datestart: new Date(2022, 1, 17),	note: "Sovngarde"},
 
 		{key: "CrownSale",		datestart: new Date(2016, 11, 23)},
 		{key: "CrownSale",		datestart: new Date(2017, 3, 11)},
