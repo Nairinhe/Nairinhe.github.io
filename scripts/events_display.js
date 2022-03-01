@@ -8,7 +8,10 @@ for (var i = 0; i < events.length; i++)
   var latestDate = new Date(Math.max.apply(null, same.map( x => { return x.datestart; })));
 
   // filter our events that are either aren't latest (some happen more than once), or happened last time long ago
-  var isOld = (event.datestart.getFullYear() != latestDate.getFullYear()) || (event.datestart.getFullYear() < new Date().getFullYear() - 1);
+  var isOld =
+    (event.datestart.getFullYear() != latestDate.getFullYear()) ||
+    (new Date().getFullYear() - event.datestart.getFullYear() > 1) ||
+    (new Date().getTime() - event.datestart.getTime() > 300 * 24 * 60 * 60 * 1000);
   var circleClass = (isOld ? "circle circle_old" : "circle");
 
   var dateStart = new Date(event.datestart);

@@ -99,7 +99,6 @@ var events =
 		{key: "Season",		datestart: new Date(2021, 8, 30),	dateend: new Date(2021, 9, 12),		note: "Bounties of Blackwood"},
 
 		// these are irregular or new DLC events
-		{key: "Dragonguard",	datestart: new Date(2019, 10, 26),	dateend: new Date(2019, 11, 9)},
 		{key: "Murkmire",	datestart: new Date(2020, 1, 20),	dateend: new Date(2020, 2, 3)},
 		{key: "Exploration",	datestart: new Date(2020, 10, 12),	dateend: new Date(2020, 10, 16)},
 		{key: "Exploration",	datestart: new Date(2021, 9, 12),	dateend: new Date(2021, 9, 20)},
@@ -117,7 +116,10 @@ var events =
 		{key: "BlackFriday",	datestart: new Date(2021, 10, 24),	dateend: new Date(2021, 10, 29)},
 
     // old events
-		{key: "ClockworkCity",	datestart: new Date(2018, 10, 15),	dateend: new Date(2018, 10, 26)},
+
+    // obsolete events: three years ago last
+		/*{key: "ClockworkCity",	datestart: new Date(2018, 10, 15),	dateend: new Date(2018, 10, 26)},
+		{key: "Dragonguard",	datestart: new Date(2019, 10, 26),	dateend: new Date(2019, 11, 9)},
 
 		{key: "Orsinium",	datestart: new Date(2016, 10, 7),	dateend: new Date(2016, 10, 21)},
 		{key: "Orsinium",	datestart: new Date(2017, 10, 16),	dateend: new Date(2017, 10, 27)},
@@ -127,5 +129,5 @@ var events =
 		{key: "ThievesDb",	datestart: new Date(2017, 2, 6),	dateend: new Date(2017, 2, 20)},
 		{key: "ThievesDb",	datestart: new Date(2018, 2, 1),	dateend: new Date(2018, 2, 12)},
 		{key: "ThievesDb",	datestart: new Date(2019, 2, 7),	dateend: new Date(2019, 2, 18)},
-		{key: "ThievesDb",	datestart: new Date(2019, 6, 2),	dateend: new Date(2019, 6, 15)},
+		{key: "ThievesDb",	datestart: new Date(2019, 6, 2),	dateend: new Date(2019, 6, 15)},*/
 ];
