@@ -178,6 +178,7 @@ var events =
 		{key: "MotifQ3",	datestart: new Date(2021, 0, 6),	note: "Hazardous Alchemy"},
 		{key: "MotifQ3",	datestart: new Date(2021, 1, 17),	note: "Thorn Legion"},
 		{key: "MotifQ3",	datestart: new Date(2022, 0, 5),	note: "Crimson Oath"},
+		{key: "MotifQ3",	datestart: new Date(2022, 2, 9),	note: "Silver Rose"},
 
 		{key: "MotifQ4",	datestart: new Date(2019, 0, 16),	note: "Elder Argonian"},
 		{key: "MotifQ4",	datestart: new Date(2019, 4, 15),	note: "Honor Guard"},
