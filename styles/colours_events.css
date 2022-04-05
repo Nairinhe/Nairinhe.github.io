@@ -28,6 +28,7 @@
 	--murkmire-colour: #327040;
 	--tribunal-colour: #c4a26a;
 	--daedric-war-colour: #931dcf;
+	--zeal-of-zenithar-colour: #ffb300;
 }
 
 .Anniversary{
@@ -98,4 +99,7 @@
 }
 .Blackwood{
 	background-color: var(--blackwood-colour);
+}
+.Zenithar{
+	background-color: var(--zeal-of-zenithar-colour);
 }

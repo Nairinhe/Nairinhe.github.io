@@ -21,6 +21,7 @@ var eventNames =
   "Murkmire"      : "Murkmire Event",
   "Tribunal"      : "Tribunal Celebration",
   "DaedricWar"    : "Daedric War Celebration",
+  "Zenithar"      : "Zeal of Zenithar",
 
   "BlackFriday"   : "Black Fredas Sale",
 
@@ -109,6 +110,7 @@ var events =
 		{key: "Elsweyr",	datestart: new Date(2021, 6, 22),	dateend: new Date(2021, 7, 3)},
 		{key: "YearOne",	datestart: new Date(2021, 7, 26),	dateend: new Date(2021, 8, 7)},
     {key: "DaedricWar",	datestart: new Date(2022, 0, 20),	dateend: new Date(2022, 1, 1)},
+    // {key: "Zenithar",	datestart: new Date(2022, 5, ?),	dateend: new Date(2022, 5, ?)},
 
 		// other events
 		{key: "BlackFriday",	datestart: new Date(2016, 10, 23),	dateend: new Date(2016, 10, 28)},
