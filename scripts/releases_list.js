@@ -84,7 +84,7 @@ var events =
 		{key: "NewCrates",	datestart: new Date(2021, 5, 17),	note: "Iron Atronach"},
 		{key: "NewCrates",	datestart: new Date(2021, 8, 23),	 note: "Grim Harlequin"},
 		{key: "NewCrates",	datestart: new Date(2021, 11, 9),	 note: "Celestial"},
-		{key: "NewCrates",	datestart: new Date(2022, 02, 31),	 note: "Sunken Trove"},
+		{key: "NewCrates",	datestart: new Date(2022, 2, 31),	 note: "Sunken Trove"},
 
 		{key: "ReturningCrates",	datestart: new Date(2017, 11, 4),	note: "Storm Atronach"},
 		{key: "ReturningCrates",	datestart: new Date(2017, 11, 11),	note: "Wild Hunt"},
@@ -127,6 +127,7 @@ var events =
 		{key: "CrownSale",		datestart: new Date(2020, 11, 22)},
 		{key: "CrownSale",		datestart: new Date(2021, 7, 17)},
 		{key: "CrownSale",		datestart: new Date(2021, 11, 22)},
+		{key: "CrownSale",		datestart: new Date(2022, 3, 13)},
 
 		{key: "EsoPlusTrial",		datestart: new Date(2017, 6, 5)},
 		{key: "EsoPlusTrial",		datestart: new Date(2018, 0, 9)},
@@ -156,6 +157,7 @@ var events =
 		{key: "FreePlay",		datestart: new Date(2020, 11, 3)},
 		{key: "FreePlay",		datestart: new Date(2021, 2, 31)},
 		{key: "FreePlay",		datestart: new Date(2021, 7, 17)},
+		{key: "FreePlay",		datestart: new Date(2022, 3, 13)},
 
 		{key: "MotifQ1",	datestart: new Date(2018, 5, 27),	note: "Fang Lair"},
 		{key: "MotifQ1",	datestart: new Date(2018, 5, 28),	note: "Scalecaller"},
