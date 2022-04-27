@@ -56,6 +56,8 @@ var events =
 		{key: "PrologueQ2",	datestart: new Date(2018, 2, 21),	note: "Summerset"},
 		{key: "PrologueQ2",	datestart: new Date(2019, 2, 25),	note: "Elsweyr"},
 		{key: "PrologueQ2",	datestart: new Date(2020, 2, 30),	note: "Greymoor"},
+		{key: "PrologueQ2",	datestart: new Date(2021, 2, 31),	note: "Blackwood"},
+		{key: "PrologueQ2",	datestart: new Date(2022, 3, 14),	note: "High Isle"},
 
 		{key: "PrologueQ4",	datestart: new Date(2017, 9, 9),	note: "Clockwork City"},
 		{key: "PrologueQ4",	datestart: new Date(2018, 9, 8),	note: "Murkmire"},
