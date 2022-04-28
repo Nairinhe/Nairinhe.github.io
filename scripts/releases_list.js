@@ -113,6 +113,7 @@ var events =
 		{key: "ReturningCrates",	datestart: new Date(2022, 1, 17),	note: "Sovngarde"},
 		{key: "ReturningCrates",	datestart: new Date(2022, 2, 17),	note: "Xanmeer"},
 		{key: "ReturningCrates",	datestart: new Date(2022, 3, 21),	note: "Storm Atronach"},
+		{key: "ReturningCrates",	datestart: new Date(2022, 4, 19),	note: "Flame Atronach"},
 
 		{key: "CrownSale",		datestart: new Date(2016, 11, 23)},
 		{key: "CrownSale",		datestart: new Date(2017, 3, 11)},
@@ -191,5 +192,6 @@ var events =
 		{key: "MotifQ4",	datestart: new Date(2020, 2, 18),	note: "Shield of Senchal"},
 		{key: "MotifQ4",	datestart: new Date(2020, 3, 22),	note: "New Moon Priest"},
 		{key: "MotifQ4",	datestart: new Date(2021, 3, 14),	note: "Wayward Guardian"},
-		{key: "MotifQ4",	datestart: new Date(2021, 4, 12),	note: "Nighthollow"}
+		{key: "MotifQ4",	datestart: new Date(2021, 4, 12),	note: "Nighthollow"},
+		{key: "MotifQ4",	datestart: new Date(2022, 4, 25),	note: "Annihilarch's Chosen"}
 ];

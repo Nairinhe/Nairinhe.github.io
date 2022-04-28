@@ -14,5 +14,5 @@ for (var i = 0; i < events.length; i++){
     "data-month='" + dateStart.getMonth() + "' " +
     "data-day='" + dateStart.getDate() + "' " +
     "data-note='" +
-    ((typeof event.note !== 'undefined') ? event.note : "") + "'></div>";
+    ((typeof event.note !== 'undefined') ? event.note.replace("'", "&#39") : "") + "'></div>";
 };
