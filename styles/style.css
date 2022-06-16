@@ -101,6 +101,11 @@ td {
 	position: relative;
 }
 
+.footer {
+  font-size: 10px;
+  padding: 5px 5px 0px 5px;
+}
+
 li[class~="event_hover"] {
   color: var(--hover-colour);
 }
