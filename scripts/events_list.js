@@ -92,25 +92,26 @@ var events =
 		{key: "Undaunted",	datestart: new Date(2020, 11, 3),	dateend: new Date(2020, 11, 15)},
 		{key: "Undaunted",	datestart: new Date(2021, 10, 18),	dateend: new Date(2021, 10, 30)},
 
-		// these are chapter and season events
-		{key: "Morrowind",	datestart: new Date(2019, 1, 7),	dateend: new Date(2019, 1, 18)},
-		{key: "Summerset",	datestart: new Date(2020, 6, 23),	dateend: new Date(2020, 7, 4)},
-
+		// these are chapter/season events
 		{key: "Season",		datestart: new Date(2018, 8, 20),	dateend: new Date(2018, 8, 28),		note: "Summerfall"},
 		{key: "Season",		datestart: new Date(2019, 9, 3),	dateend: new Date(2019, 9, 13),		note: "Dragon Rise"},
 		{key: "Season",		datestart: new Date(2020, 8, 23),	dateend: new Date(2020, 9, 5),		note: "Lost Treasures of Skyrim"},
 		{key: "Season",		datestart: new Date(2021, 8, 30),	dateend: new Date(2021, 9, 12),		note: "Bounties of Blackwood"},
 
 		// these are irregular or new DLC events
+		{key: "Morrowind",	datestart: new Date(2019, 1, 7),	dateend: new Date(2019, 1, 18)},
+		{key: "Summerset",	datestart: new Date(2020, 6, 23),	dateend: new Date(2020, 7, 4)},
 		{key: "Murkmire",	datestart: new Date(2020, 1, 20),	dateend: new Date(2020, 2, 3)},
-		{key: "Exploration",	datestart: new Date(2020, 10, 12),	dateend: new Date(2020, 10, 16)},
-		{key: "Exploration",	datestart: new Date(2021, 9, 12),	dateend: new Date(2021, 9, 20)},
-		{key: "Exploration",	datestart: new Date(2022, 2, 17),	dateend: new Date(2022, 2, 22)},
 		{key: "Tribunal",	datestart: new Date(2021, 1, 25),	dateend: new Date(2021, 2, 9)},
 		{key: "Elsweyr",	datestart: new Date(2021, 6, 22),	dateend: new Date(2021, 7, 3)},
 		{key: "YearOne",	datestart: new Date(2021, 7, 26),	dateend: new Date(2021, 8, 7)},
     {key: "DaedricWar",	datestart: new Date(2022, 0, 20),	dateend: new Date(2022, 1, 1)},
-    // {key: "Zenithar",	datestart: new Date(2022, 5, ?),	dateend: new Date(2022, 5, ?)},
+    {key: "Zenithar",	datestart: new Date(2022, 5, 30),	dateend: new Date(2022, 6, 12)},
+
+    // exploration
+		{key: "Exploration",	datestart: new Date(2020, 10, 12),	dateend: new Date(2020, 10, 16)},
+		{key: "Exploration",	datestart: new Date(2021, 9, 12),	dateend: new Date(2021, 9, 20)},
+		{key: "Exploration",	datestart: new Date(2022, 2, 17),	dateend: new Date(2022, 2, 22)},
 
 		// other events
 		{key: "BlackFriday",	datestart: new Date(2016, 10, 23),	dateend: new Date(2016, 10, 28)},
