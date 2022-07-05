@@ -41,6 +41,7 @@ var events =
 		{key: "DungeonDlcQ3",	datestart: new Date(2019, 7, 12),	note: "Scalebreaker"},
 		{key: "DungeonDlcQ3",	datestart: new Date(2020, 7, 24),	note: "Stonethorn"},
 		{key: "DungeonDlcQ3",	datestart: new Date(2021, 7, 23),	note: "Waking Flame"},
+		{key: "DungeonDlcQ3",	datestart: new Date(2022, 7, 22),	note: "Lost Depths"},
 
 		{key: "StoryDlc",	datestart: new Date(2015, 7, 31),	note: "Imperial City"},
 		{key: "StoryDlc",	datestart: new Date(2015, 10, 2),	note: "Orsinium"},
