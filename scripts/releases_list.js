@@ -149,6 +149,7 @@ var events =
 		{key: "EsoPlusTrial",		datestart: new Date(2021, 0, 19)},
 		{key: "EsoPlusTrial",		datestart: new Date(2021, 5, 14)},
 		{key: "EsoPlusTrial",		datestart: new Date(2021, 9, 18)},
+		{key: "EsoPlusTrial",		datestart: new Date(2022, 6, 7)},
 
 		{key: "FreePlay",		datestart: new Date(2017, 3, 11)},
 		{key: "FreePlay",		datestart: new Date(2017, 10, 30)},
