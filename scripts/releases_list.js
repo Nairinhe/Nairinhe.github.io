@@ -117,6 +117,7 @@ var events =
 		{key: "ReturningCrates",	datestart: new Date(2022, 3, 21),	note: "Storm Atronach"},
 		{key: "ReturningCrates",	datestart: new Date(2022, 4, 19),	note: "Flame Atronach"},
 		{key: "ReturningCrates",	datestart: new Date(2022, 6, 14),	note: "Scalecaller"},
+		{key: "ReturningCrates",	datestart: new Date(2022, 7, 25),	note: "Nightfall"},
 
 		{key: "CrownSale",		datestart: new Date(2016, 11, 23)},
 		{key: "CrownSale",		datestart: new Date(2017, 3, 11)},
@@ -181,6 +182,7 @@ var events =
 		{key: "MotifChapter",	datestart: new Date(2020, 7, 24),	note: "Sea Giant"},
 		{key: "MotifChapter",	datestart: new Date(2020, 8, 23),	note: "Greymoor"},
 		{key: "MotifChapter",	datestart: new Date(2021, 8, 15),	note: "Black Fin Legion"},
+		{key: "MotifChapter",	datestart: new Date(2022, 7, 22),	note: "Ascendant Order"},
 
 		{key: "MotifQ3",	datestart: new Date(2018, 11, 5),	note: "Silver Dawn"},
 		{key: "MotifQ3",	datestart: new Date(2019, 1, 13),	note: "Huntsman"},
