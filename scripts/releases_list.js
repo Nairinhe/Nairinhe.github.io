@@ -135,6 +135,7 @@ var events =
 		{key: "CrownSale",		datestart: new Date(2021, 7, 17)},
 		{key: "CrownSale",		datestart: new Date(2021, 11, 22)},
 		{key: "CrownSale",		datestart: new Date(2022, 3, 13)},
+		{key: "CrownSale",		datestart: new Date(2022, 7, 16)},
 
 		{key: "EsoPlusTrial",		datestart: new Date(2017, 6, 5)},
 		{key: "EsoPlusTrial",		datestart: new Date(2018, 0, 9)},
@@ -166,6 +167,7 @@ var events =
 		{key: "FreePlay",		datestart: new Date(2021, 2, 31)},
 		{key: "FreePlay",		datestart: new Date(2021, 7, 17)},
 		{key: "FreePlay",		datestart: new Date(2022, 3, 13)},
+		{key: "FreePlay",		datestart: new Date(2022, 7, 16)},
 
 		{key: "MotifQ1",	datestart: new Date(2018, 5, 27),	note: "Fang Lair"},
 		{key: "MotifQ1",	datestart: new Date(2018, 5, 28),	note: "Scalecaller"},
