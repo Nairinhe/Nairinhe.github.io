@@ -7,7 +7,7 @@ body {
 body > div:first-child {
   display: block;
 
-  padding-left: 290px;
+  padding-left: 200px;
   line-height: 60px;
 
   font-family: "Bebas Neue", sans-serif;
@@ -46,7 +46,7 @@ a:hover {
 }
 
 ul {
-  width: 290px;
+  width: 200px;
   margin: 0;
 }
 

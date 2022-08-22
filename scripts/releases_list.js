@@ -1,6 +1,6 @@
 var eventNames =
 {
-    "ChapterLaunch"    : "Chapter (Q2) PC/MAC 'early access'",
+    "ChapterLaunch"    : "Chapter (Q2) PC 'early access'",
     "StoryDlc"         : "Story DLC (Q4)",
     "DungeonDlcQ1"     : "Dungeon DLC (Q1)",
     "DungeonDlcQ3"     : "Dungeon DLC (Q3)",
