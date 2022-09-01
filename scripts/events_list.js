@@ -92,6 +92,7 @@ var events =
 		{key: "Undaunted",	datestart: new Date(2020, 0, 9),	dateend: new Date(2020, 0, 13)},
 		{key: "Undaunted",	datestart: new Date(2020, 11, 3),	dateend: new Date(2020, 11, 15)},
 		{key: "Undaunted",	datestart: new Date(2021, 10, 18),	dateend: new Date(2021, 10, 30)},
+		{key: "Undaunted",	datestart: new Date(2022, 8, 8),	dateend: new Date(2022, 8, 20)},
 
 		// these are chapter/season events
 		{key: "Season",		datestart: new Date(2018, 8, 20),	dateend: new Date(2018, 8, 28),		note: "Summerfall"},
