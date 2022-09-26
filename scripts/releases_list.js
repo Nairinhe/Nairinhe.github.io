@@ -52,6 +52,7 @@ var events =
 		{key: "StoryDlc",	datestart: new Date(2019, 9, 21),	note: "Dragonhold"},
 		{key: "StoryDlc",	datestart: new Date(2020, 10, 2),	note: "Markarth"},
 		{key: "StoryDlc",	datestart: new Date(2021, 10, 1),	note: "Deadlands"},
+		{key: "StoryDlc",	datestart: new Date(2022, 10, 1),	note: "Firesong"},
 
 		{key: "PrologueQ2",	datestart: new Date(2017, 4, 8),	note: "Morrowind"},
 		{key: "PrologueQ2",	datestart: new Date(2018, 2, 21),	note: "Summerset"},
