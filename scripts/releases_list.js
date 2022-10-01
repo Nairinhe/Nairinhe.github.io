@@ -66,6 +66,7 @@ var events =
 		{key: "PrologueQ4",	datestart: new Date(2019, 9, 8),	note: "Dragonhold"},
 		{key: "PrologueQ4",	datestart: new Date(2020, 8, 18),	note: "Markarth"},
 		{key: "PrologueQ4",	datestart: new Date(2021, 8, 30),	note: "Deadlands"},
+		{key: "PrologueQ4",	datestart: new Date(2022, 8, 30),	note: "Firesong"},
 
 		{key: "NewCrates",	datestart: new Date(2016, 11, 1),	note: "Storm Atronach"},
 		{key: "NewCrates",	datestart: new Date(2017, 2, 2),	note: "Wild Hunt"},

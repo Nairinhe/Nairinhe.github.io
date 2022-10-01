@@ -29,6 +29,7 @@
 	--tribunal-colour: #c4a26a;
 	--daedric-war-colour: #931dcf;
 	--zeal-of-zenithar-colour: #ffb300;
+	--dark-heart: #a61436;
 }
 
 .Anniversary{
@@ -102,4 +103,7 @@
 }
 .Zenithar{
 	background-color: var(--zeal-of-zenithar-colour);
+}
+.DarkHeart{
+	background-color: var(--dark-heart);
 }
