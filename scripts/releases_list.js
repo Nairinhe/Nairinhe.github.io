@@ -188,6 +188,7 @@ var events =
 		{key: "MotifChapter",	datestart: new Date(2020, 8, 23),	note: "Greymoor"},
 		{key: "MotifChapter",	datestart: new Date(2021, 8, 15),	note: "Black Fin Legion"},
 		{key: "MotifChapter",	datestart: new Date(2022, 7, 22),	note: "Ascendant Order"},
+		{key: "MotifChapter",	datestart: new Date(2022, 9, 26),	note: "Systres Guardian"},
 
 		{key: "MotifQ3",	datestart: new Date(2018, 11, 5),	note: "Silver Dawn"},
 		{key: "MotifQ3",	datestart: new Date(2019, 1, 13),	note: "Huntsman"},
