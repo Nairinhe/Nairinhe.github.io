@@ -22,6 +22,7 @@ var eventNames =
   "Tribunal"      : "Tribunal Celebration",
   "DaedricWar"    : "Daedric War Celebration",
   "Zenithar"      : "Zeal of Zenithar",
+  "DarkHeart"     : "Dark Heart of Skyrim",
 
   "BlackFriday"   : "Black Fredas Sale",
 
@@ -81,6 +82,7 @@ var events =
 		{key: "NewLife",	datestart: new Date(2019, 11, 19),	dateend: new Date(2020, 0, 2)},
 		{key: "NewLife",	datestart: new Date(2020, 11, 17),	dateend: new Date(2021, 0, 5)},
 		{key: "NewLife",	datestart: new Date(2021, 11, 16),	dateend: new Date(2022, 0, 4)},
+		{key: "NewLife",	datestart: new Date(2022, 11, 15),	dateend: new Date(2023, 0, 3)},
 
 		// these are traditional established events
 		{key: "ImperialCity",	datestart: new Date(2016, 7, 29),	dateend: new Date(2016, 8, 7)},
@@ -111,11 +113,14 @@ var events =
 		{key: "YearOne",	datestart: new Date(2021, 7, 26),	dateend: new Date(2021, 8, 7)},
     {key: "DaedricWar",	datestart: new Date(2022, 0, 20),	dateend: new Date(2022, 1, 1)},
     {key: "Zenithar",	datestart: new Date(2022, 5, 30),	dateend: new Date(2022, 6, 12)},
+    {key: "DarkHeart",	datestart: new Date(2022, 10, 17),	dateend: new Date(2022, 10, 29)},
 
     // exploration
 		{key: "Exploration",	datestart: new Date(2020, 10, 12),	dateend: new Date(2020, 10, 16)},
+		{key: "Exploration",	datestart: new Date(2021, 4, 13),	dateend: new Date(2021, 4, 20)},
 		{key: "Exploration",	datestart: new Date(2021, 9, 12),	dateend: new Date(2021, 9, 20)},
 		{key: "Exploration",	datestart: new Date(2022, 2, 17),	dateend: new Date(2022, 2, 22)},
+		{key: "Exploration",	datestart: new Date(2022, 9, 11),	dateend: new Date(2022, 9, 17)},
 
 		// other events
 		{key: "BlackFriday",	datestart: new Date(2016, 10, 23),	dateend: new Date(2016, 10, 28)},
