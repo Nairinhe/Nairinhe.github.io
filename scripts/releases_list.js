@@ -92,7 +92,7 @@ var events =
 		{key: "NewCrates",	datestart: new Date(2022, 2, 31),	 note: "Sunken Trove"},
 		{key: "NewCrates",	datestart: new Date(2022, 5, 23),	 note: "Dark Chivalry"},
 		{key: "NewCrates",	datestart: new Date(2022, 8, 22),	 note: "Wraithtide"},
-		{key: "NewCrates",	datestart: new Date(2022, 12, 8),	 note: "Stonelore"},
+		{key: "NewCrates",	datestart: new Date(2022, 11, 8),	 note: "Stonelore"},
 
 		{key: "ReturningCrates",	datestart: new Date(2017, 11, 4),	note: "Storm Atronach"},
 		{key: "ReturningCrates",	datestart: new Date(2017, 11, 11),	note: "Wild Hunt"},
