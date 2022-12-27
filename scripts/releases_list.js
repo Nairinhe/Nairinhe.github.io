@@ -142,6 +142,7 @@ var events =
 		{key: "CrownSale",		datestart: new Date(2021, 11, 22)},
 		{key: "CrownSale",		datestart: new Date(2022, 3, 13)},
 		{key: "CrownSale",		datestart: new Date(2022, 7, 16)},
+		{key: "CrownSale",		datestart: new Date(2022, 11, 22)},
 
 		{key: "EsoPlusTrial",		datestart: new Date(2017, 6, 5)},
 		{key: "EsoPlusTrial",		datestart: new Date(2018, 0, 9)},
