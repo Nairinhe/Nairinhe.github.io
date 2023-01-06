@@ -23,6 +23,7 @@ var eventNames =
   "DaedricWar"    : "Daedric War Celebration",
   "Zenithar"      : "Zeal of Zenithar",
   "DarkHeart"     : "Dark Heart of Skyrim",
+  "SeasonDragon"  : "Season of the Dragon",
 
   "BlackFriday"   : "Black Fredas Sale",
 
@@ -114,6 +115,7 @@ var events =
     {key: "DaedricWar",	datestart: new Date(2022, 0, 20),	dateend: new Date(2022, 1, 1)},
     {key: "Zenithar",	datestart: new Date(2022, 5, 30),	dateend: new Date(2022, 6, 12)},
     {key: "DarkHeart",	datestart: new Date(2022, 10, 17),	dateend: new Date(2022, 10, 29)},
+    {key: "SeasonDragon",	datestart: new Date(2023, 0, 26),	dateend: new Date(2023, 1, 9)},
 
     // exploration
 		{key: "Exploration",	datestart: new Date(2020, 10, 12),	dateend: new Date(2020, 10, 16)},
