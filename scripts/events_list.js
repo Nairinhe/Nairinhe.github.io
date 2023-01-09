@@ -86,12 +86,6 @@ var events =
 		{key: "NewLife",	datestart: new Date(2022, 11, 15),	dateend: new Date(2023, 0, 3)},
 
 		// these are traditional established events
-		{key: "ImperialCity",	datestart: new Date(2016, 7, 29),	dateend: new Date(2016, 8, 7)},
-		{key: "ImperialCity",	datestart: new Date(2017, 8, 7),	dateend: new Date(2017, 8, 18)},
-		{key: "ImperialCity",	datestart: new Date(2018, 8, 6),	dateend: new Date(2018, 8, 17)},
-		{key: "ImperialCity",	datestart: new Date(2019, 8, 5),	dateend: new Date(2019, 8, 16)},
-		{key: "ImperialCity",	datestart: new Date(2020, 8, 3),	dateend: new Date(2020, 8, 15)},
-
 		{key: "Undaunted",	datestart: new Date(2018, 10, 29),	dateend: new Date(2018, 11, 5)},
 		{key: "Undaunted",	datestart: new Date(2020, 0, 9),	dateend: new Date(2020, 0, 13)},
 		{key: "Undaunted",	datestart: new Date(2020, 11, 3),	dateend: new Date(2020, 11, 15)},
@@ -134,7 +128,6 @@ var events =
 		{key: "BlackFriday",	datestart: new Date(2022, 10, 23),	dateend: new Date(2022, 11, 1)},
 
     // old events
-
     // obsolete events: three years ago last
 		/*{key: "ClockworkCity",	datestart: new Date(2018, 10, 15),	dateend: new Date(2018, 10, 26)},
 		{key: "Dragonguard",	datestart: new Date(2019, 10, 26),	dateend: new Date(2019, 11, 9)},
@@ -147,5 +140,11 @@ var events =
 		{key: "ThievesDb",	datestart: new Date(2017, 2, 6),	dateend: new Date(2017, 2, 20)},
 		{key: "ThievesDb",	datestart: new Date(2018, 2, 1),	dateend: new Date(2018, 2, 12)},
 		{key: "ThievesDb",	datestart: new Date(2019, 2, 7),	dateend: new Date(2019, 2, 18)},
-		{key: "ThievesDb",	datestart: new Date(2019, 6, 2),	dateend: new Date(2019, 6, 15)},*/
+		{key: "ThievesDb",	datestart: new Date(2019, 6, 2),	dateend: new Date(2019, 6, 15)},
+
+		{key: "ImperialCity",	datestart: new Date(2016, 7, 29),	dateend: new Date(2016, 8, 7)},
+		{key: "ImperialCity",	datestart: new Date(2017, 8, 7),	dateend: new Date(2017, 8, 18)},
+		{key: "ImperialCity",	datestart: new Date(2018, 8, 6),	dateend: new Date(2018, 8, 17)},
+		{key: "ImperialCity",	datestart: new Date(2019, 8, 5),	dateend: new Date(2019, 8, 16)},
+		{key: "ImperialCity",	datestart: new Date(2020, 8, 3),	dateend: new Date(2020, 8, 15)},*/
 ];

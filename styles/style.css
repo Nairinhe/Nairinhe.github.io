@@ -52,6 +52,7 @@ ul {
 }
 
 li {
+  min-height: 24px;
 	height: calc((100vh - 61px)/23);
   line-height: calc((100vh - 61px)/23);
   padding-left: 15px;

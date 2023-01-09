@@ -8,11 +8,14 @@ for (var i = 0; i < events.length; i++)
   var latestDate = new Date(Math.max.apply(null, same.map( x => { return x.datestart; })));
 
   // filter our events that are either aren't latest (some happen more than once), or happened last time long ago
+  var isVeryOld = new Date().getTime() - event.datestart.getTime() > 4 * 365 * 24 * 60 * 60 * 1000;
   var isOld =
     (event.datestart.getFullYear() != latestDate.getFullYear()) ||
     (new Date().getFullYear() - event.datestart.getFullYear() > 1) ||
     (new Date().getTime() - event.datestart.getTime() > 300 * 24 * 60 * 60 * 1000);
-  var circleClass = (isOld ? "circle circle_old" : "circle");
+  var circleClass = (isVeryOld
+                     ? "circle circle_ancient"
+                     : (isOld ? "circle circle_old" : "circle"));
 
   var dateStart = new Date(event.datestart);
   for (var j = new Date(event.datestart); j <= event.dateend; j.setDate(j.getDate() + 1)){
@@ -29,21 +32,23 @@ for (var i = 0; i < events.length; i++)
 
 function eventToggle()
 {
-  var circles = document.getElementsByClassName("circle_old");
+  var circles = document.getElementsByClassName("circle_ancient");
   var checkBox = $("input:checkbox")[0];
 
   var opacity;
-  if (checkBox.checked == true)
+  if (checkBox.checked == false)
   {
       for (var i = 0; i < circles.length; i++)
       {
-        circles[i].style.opacity = 0.0;
+          console.log(i);
+          circles[i].style.display = "none";
       }
   } else
   {
       for (var i = 0; i < circles.length; i++)
       {
-        circles[i].style.opacity = "";
+          console.log(i);
+          circles[i].style.display = "block";
       }
   }
 
