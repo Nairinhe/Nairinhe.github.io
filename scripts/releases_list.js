@@ -27,6 +27,7 @@ var events =
 		{key: "DungeonDlcQ1",	datestart: new Date(2020, 1, 24),	note: "Harrowstorm"},
 		{key: "DungeonDlcQ1",	datestart: new Date(2021, 2, 8),	note: "Flames of Ambition"},
 		{key: "DungeonDlcQ1",	datestart: new Date(2022, 2, 14),	note: "Ascending Tide"},
+		{key: "DungeonDlcQ1",	datestart: new Date(2023, 2, 13),	note: "Scribes of Fate"},
 
 		{key: "ChapterLaunch",	datestart: new Date(2017, 4, 22),	note: "Morrowind"},
 		{key: "ChapterLaunch",	datestart: new Date(2018, 4, 21),	note: "Summerset"},
@@ -34,6 +35,7 @@ var events =
 		{key: "ChapterLaunch",	datestart: new Date(2020, 4, 26),	note: "Greymoor"},
 		{key: "ChapterLaunch",	datestart: new Date(2021, 5, 1),	note: "Blackwood"},
 		{key: "ChapterLaunch",	datestart: new Date(2022, 5, 6),	note: "High Isle"},
+		{key: "ChapterLaunch",	datestart: new Date(2023, 5, 5),	note: "Necrom"},
 
 		{key: "DungeonDlcQ3",	datestart: new Date(2016, 7, 1),	note: "Shadows of the Hist"},
 		{key: "DungeonDlcQ3",	datestart: new Date(2017, 7, 14),	note: "Horns of the Reach"},
