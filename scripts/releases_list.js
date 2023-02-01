@@ -127,6 +127,7 @@ var events =
 		{key: "ReturningCrates",	datestart: new Date(2022, 9, 20),	note: "Hollowjack"},
 		{key: "ReturningCrates",	datestart: new Date(2022, 10, 17),	note: "Dwarven"},
 		{key: "ReturningCrates",	datestart: new Date(2023, 0, 19),	note: "New Moon"},
+		{key: "ReturningCrates",	datestart: new Date(2023, 1, 9),	note: "Potentate"},
 
 		{key: "CrownSale",		datestart: new Date(2016, 11, 23)},
 		{key: "CrownSale",		datestart: new Date(2017, 3, 11)},
@@ -208,6 +209,7 @@ var events =
 		{key: "MotifQ3",	datestart: new Date(2022, 0, 5),	note: "Crimson Oath"},
 		{key: "MotifQ3",	datestart: new Date(2022, 2, 9),	note: "Silver Rose"},
 		{key: "MotifQ3",	datestart: new Date(2023, 0, 4),	note: "Y’ffre’s Will"},
+		{key: "MotifQ3",	datestart: new Date(2023, 1, 11),	note: "Drowned Mariner"},
 
 		{key: "MotifQ4",	datestart: new Date(2019, 0, 16),	note: "Elder Argonian"},
 		{key: "MotifQ4",	datestart: new Date(2019, 4, 15),	note: "Honor Guard"},
