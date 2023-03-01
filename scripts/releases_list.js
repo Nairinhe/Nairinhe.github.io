@@ -128,6 +128,7 @@ var events =
 		{key: "ReturningCrates",	datestart: new Date(2022, 10, 17),	note: "Dwarven"},
 		{key: "ReturningCrates",	datestart: new Date(2023, 0, 19),	note: "New Moon"},
 		{key: "ReturningCrates",	datestart: new Date(2023, 1, 9),	note: "Potentate"},
+		{key: "ReturningCrates",	datestart: new Date(2023, 2, 16),	note: "Gloomspore"},
 
 		{key: "CrownSale",		datestart: new Date(2016, 11, 23)},
 		{key: "CrownSale",		datestart: new Date(2017, 3, 11)},
