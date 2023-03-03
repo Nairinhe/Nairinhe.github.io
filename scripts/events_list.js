@@ -117,6 +117,7 @@ var events =
 		{key: "Exploration",	datestart: new Date(2021, 9, 12),	dateend: new Date(2021, 9, 20)},
 		{key: "Exploration",	datestart: new Date(2022, 2, 17),	dateend: new Date(2022, 2, 22)},
 		{key: "Exploration",	datestart: new Date(2022, 9, 11),	dateend: new Date(2022, 9, 17)},
+		{key: "Exploration",	datestart: new Date(2023, 2, 2),	dateend: new Date(2023, 2, 7)},
 
 		// other events
 		{key: "BlackFriday",	datestart: new Date(2016, 10, 23),	dateend: new Date(2016, 10, 28)},
