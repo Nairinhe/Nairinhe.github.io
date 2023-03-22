@@ -61,6 +61,7 @@ var events =
 		{key: "Jester",		datestart: new Date(2020, 2, 26),	dateend: new Date(2020, 3, 2)},
 		{key: "Jester",		datestart: new Date(2021, 2, 25),	dateend: new Date(2021, 3, 1)},
 		{key: "Jester",		datestart: new Date(2022, 2, 31),	dateend: new Date(2022, 3, 7)},
+		{key: "Jester",		datestart: new Date(2023, 2, 29),	dateend: new Date(2023, 3, 6)},
 
 		{key: "ChapterLaunch",	datestart: new Date(2017, 4, 22),	dateend: new Date(2017, 5, 6),	note: "Morrowind"},
 		{key: "ChapterLaunch",	datestart: new Date(2018, 4, 21),	dateend: new Date(2018, 5, 5),	note: "Summerset"},
