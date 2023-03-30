@@ -95,6 +95,7 @@ var events =
 		{key: "NewCrates",	datestart: new Date(2022, 5, 23),	 note: "Dark Chivalry"},
 		{key: "NewCrates",	datestart: new Date(2022, 8, 22),	 note: "Wraithtide"},
 		{key: "NewCrates",	datestart: new Date(2022, 11, 8),	 note: "Stonelore"},
+		{key: "NewCrates",	datestart: new Date(2022, 2, 30),	 note: "Ragebound"},
 
 		{key: "ReturningCrates",	datestart: new Date(2017, 11, 4),	note: "Storm Atronach"},
 		{key: "ReturningCrates",	datestart: new Date(2017, 11, 11),	note: "Wild Hunt"},
@@ -129,6 +130,7 @@ var events =
 		{key: "ReturningCrates",	datestart: new Date(2023, 0, 19),	note: "New Moon"},
 		{key: "ReturningCrates",	datestart: new Date(2023, 1, 9),	note: "Potentate"},
 		{key: "ReturningCrates",	datestart: new Date(2023, 2, 16),	note: "Gloomspore"},
+		{key: "ReturningCrates",	datestart: new Date(2023, 3, 13),	note: "Ayleid"},
 
 		{key: "CrownSale",		datestart: new Date(2016, 11, 23)},
 		{key: "CrownSale",		datestart: new Date(2017, 3, 11)},
