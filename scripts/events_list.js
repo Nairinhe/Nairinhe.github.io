@@ -54,6 +54,7 @@ var events =
 		{key: "Anniversary",	datestart: new Date(2020, 3, 2),	dateend: new Date(2020, 3, 14)},
 		{key: "Anniversary",	datestart: new Date(2021, 3, 1),	dateend: new Date(2021, 3, 15)},
 		{key: "Anniversary",	datestart: new Date(2022, 3, 7),	dateend: new Date(2022, 3, 19)},
+		{key: "Anniversary",	datestart: new Date(2023, 3, 6),	dateend: new Date(2023, 3, 18)},
 
 		{key: "Jester",		datestart: new Date(2017, 2, 23),	dateend: new Date(2017, 3, 4)},
 		{key: "Jester",		datestart: new Date(2018, 2, 29),	dateend: new Date(2018, 3, 2)},
